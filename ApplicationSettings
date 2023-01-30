@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationSettings>
+  <IntegrateWithOtherApplication>
+    <Password>rFvsug!gnTA7</Password>
+  </IntegrateWithOtherApplication>
+  <StartPage>スタートページ</StartPage>
+  <UserServicePort>43497</UserServicePort>
+  <WebSitePort>23571</WebSitePort>
+</ApplicationSettings>

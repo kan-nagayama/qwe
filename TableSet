@@ -1,0 +1,1708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableSet>
+  <Relations>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>組織コード</ForeignColumn>
+      <ForeignTable>予算管理</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>組織コード</PrimaryColumn>
+      <PrimaryTable>組織マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+    <Item class="Forguncy.ForeignkeyInfomation" assembly="ForguncyDataAccess">
+      <ForeignColumn>科目</ForeignColumn>
+      <ForeignTable>予算管理</ForeignTable>
+      <IsDetailTableRelation>False</IsDetailTableRelation>
+      <PrimaryColumn>科目コード</PrimaryColumn>
+      <PrimaryTable>科目マスタ</PrimaryTable>
+      <RelationTypeOnDelete>None</RelationTypeOnDelete>
+      <RelationTypeOnUpdate>None</RelationTypeOnUpdate>
+    </Item>
+  </Relations>
+  <Tables>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>事業部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>課</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>日付</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>金額</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+      </Columns>
+      <Name>実績管理</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>1</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAn1s+fsaWCIouAHRepl4NAAoAIAAgACwAn1s+fsaWCIouAER9VH6zMPwwyTAgAEEAUwAgAER9VH6zMPwwyTANAAoAIAAsAJ9bPn7GlgiKLgDRee52DQAKACAALABTAFUATQAoAJ9bPn7GlgiKLgBfADQACGfRkU2YKQAgAEEAUwAgAF8ANAAIZw0ACgAgACwAUwBVAE0AKACfWz5+xpYIii4AXwA1AAhn0ZFNmCkAIABBAFMAIABfADUACGcNAAoAIAAsAFMAVQBNACgAn1s+fsaWCIouAF8ANgAIZ9GRTZgpACAAQQBTACAAXwA2AAhnDQAKACAALABTAFUATQAoAJ9bPn7GlgiKLgBfADcACGfRkU2YKQAgAEEAUwAgAF8ANwAIZw0ACgAgACwAUwBVAE0AKACfWz5+xpYIii4AXwA4AAhn0ZFNmCkAIABBAFMAIABfADgACGcNAAoAIAAsAFMAVQBNACgAn1s+fsaWCIouAF8AOQAIZ9GRTZgpACAAQQBTACAAXwA5AAhnDQAKACAALABTAFUATQAoAJ9bPn7GlgiKLgBfADEAMAAIZ9GRTZgpACAAQQBTACAAXwAxADAACGcNAAoAIAAsAFMAVQBNACgAn1s+fsaWCIouAF8AMQAxAAhn0ZFNmCkAIABBAFMAIABfADEAMQAIZw0ACgAgACwAUwBVAE0AKACfWz5+xpYIii4AXwAxADIACGfRkU2YKQAgAEEAUwAgAF8AMQAyAAhnDQAKACAALABTAFUATQAoAJ9bPn7GlgiKLgBfADEACGfRkU2YKQAgAEEAUwAgAF8AMQAIZw0ACgAgACwAUwBVAE0AKACfWz5+xpYIii4AXwAyAAhn0ZFNmCkAIABBAFMAIABfADIACGcNAAoAIAAsAFMAVQBNACgAn1s+fsaWCIouAF8AMwAIZ9GRTZgpACAAQQBTACAAXwAzAAhnDQAKAEYAUgBPAE0ADQAKACAAKAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAAIAAsANGRTZggAEEAUwAgAF8ANAAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANQAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADcACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA4AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMwAIZ9GRTZgNAAoAIABGAFIATwBNAA0ACgAgACAAn1s+fqF7BnQNAAoAIABXAEgARQBSAEUAIABzAHQAcgBmAHQAaQBtAGUAKAAnACUAbQAnACwAZABhAHQAZQAoACcAMQA5ADAAMAAtADAAMQAtADAAMQAnACwAJwArACcAIAB8AHwAIABDAEEAUwBUACgAQwBBAFMAVAAoAOVl2E4gAEEAUwAgACAAaQBuAHQAIAApAC0AMgAgAEEAUwAgAHQAZQB4AHQAKQAgAHwAfAAgACcAIABkAGEAeQBzACcAKQApACAAPQAgACcAMAA0ACcAIAAtAC0AIADTMOUw/DCSMClSKHVZMIswaDDlZdhOTDC3MOowojDrMCRQZzDCU2dxWTCLMF8wgTBrMAlZ22MgAGgAdAB0AHAAcwA6AC8ALwBkAG8AYwBzAC4AZgBvAHIAZwB1AG4AYwB5AC4AYwBvAG0ALwB2ADQALwAjACEARABvAGMAdQBtAGUAbgB0AHMALwAxADkALwAxADkAMgAuAGgAdABtAA0ACgAgAFUATgBJAE8ATgAgAEEATABMAA0ACgAgAFMARQBMAEUAQwBUAA0ACgAgACAAdF6mXiAAQQBTACAAdF6mXg0ACgAgACAALABEfVR+szD8MMkwIABBAFMAIABEfVR+szD8MMkwDQAKACAAIAAsANF57nYgAEEAUwAgANF57nYNAAoAIAAgACwAMAAgAEEAUwAgAF8ANAAIZ9GRTZgNAAoAIAAgACwA0ZFNmCAAQQBTACAAXwA1AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA2AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8ANwAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADgACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA5AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAwAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAzAAhn0ZFNmA0ACgAgAEYAUgBPAE0ADQAKACAAIACfWz5+oXsGdA0ACgAgAFcASABFAFIARQAgAHMAdAByAGYAdABpAG0AZQAoACcAJQBtACcALABkAGEAdABlACgAJwAxADkAMAAwAC0AMAAxAC0AMAAxACcALAAnACsAJwAgAHwAfAAgAEMAQQBTAFQAKABDAEEAUwBUACgA5WXYTiAAQQBTACAAIABpAG4AdAAgACkALQAyACAAQQBTACAAdABlAHgAdAApACAAfAB8ACAAJwAgAGQAYQB5AHMAJwApACkAIAA9ACAAJwAwADUAJwANAAoAIABVAE4ASQBPAE4AIABBAEwATAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAAIAAsADAAIABBAFMAIABfADQACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADUACGfRkU2YDQAKACAAIAAsANGRTZggAEEAUwAgAF8ANgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADcACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA4AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMwAIZ9GRTZgNAAoAIABGAFIATwBNAA0ACgAgACAAn1s+fqF7BnQNAAoAIABXAEgARQBSAEUAIABzAHQAcgBmAHQAaQBtAGUAKAAnACUAbQAnACwAZABhAHQAZQAoACcAMQA5ADAAMAAtADAAMQAtADAAMQAnACwAJwArACcAIAB8AHwAIABDAEEAUwBUACgAQwBBAFMAVAAoAOVl2E4gAEEAUwAgACAAaQBuAHQAIAApAC0AMgAgAEEAUwAgAHQAZQB4AHQAKQAgAHwAfAAgACcAIABkAGEAeQBzACcAKQApACAAPQAgACcAMAA2ACcADQAKACAAVQBOAEkATwBOACAAQQBMAEwADQAKACAAUwBFAEwARQBDAFQADQAKACAAIAB0XqZeIABBAFMAIAB0XqZeDQAKACAAIAAsAER9VH6zMPwwyTAgAEEAUwAgAER9VH6zMPwwyTANAAoAIAAgACwA0XnudiAAQQBTACAA0Xnudg0ACgAgACAALAAwACAAQQBTACAAXwA0AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA1AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA2AAhn0ZFNmA0ACgAgACwA0ZFNmCAAQQBTACAAXwA3AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADkACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADAACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADMACGfRkU2YDQAKACAARgBSAE8ATQANAAoAIAAgAJ9bPn6hewZ0DQAKACAAVwBIAEUAUgBFACAAcwB0AHIAZgB0AGkAbQBlACgAJwAlAG0AJwAsAGQAYQB0AGUAKAAnADEAOQAwADAALQAwADEALQAwADEAJwAsACcAKwAnACAAfAB8ACAAQwBBAFMAVAAoAEMAQQBTAFQAKADlZdhOIABBAFMAIAAgAGkAbgB0ACAAKQAtADIAIABBAFMAIAB0AGUAeAB0ACkAIAB8AHwAIAAnACAAZABhAHkAcwAnACkAKQAgAD0AIAAnADAANwAnAA0ACgAgAFUATgBJAE8ATgAgAEEATABMAA0ACgAgAFMARQBMAEUAQwBUAA0ACgAgACAAdF6mXiAAQQBTACAAdF6mXg0ACgAgACAALABEfVR+szD8MMkwIABBAFMAIABEfVR+szD8MMkwDQAKACAAIAAsANF57nYgAEEAUwAgANF57nYNAAoAIAAgACwAMAAgAEEAUwAgAF8ANAAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANQAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADcACGfRkU2YDQAKACAALADRkU2YIABBAFMAIABfADgACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA5AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAwAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAzAAhn0ZFNmA0ACgAgAEYAUgBPAE0ADQAKACAAIACfWz5+oXsGdA0ACgAgAFcASABFAFIARQAgAHMAdAByAGYAdABpAG0AZQAoACcAJQBtACcALABkAGEAdABlACgAJwAxADkAMAAwAC0AMAAxAC0AMAAxACcALAAnACsAJwAgAHwAfAAgAEMAQQBTAFQAKABDAEEAUwBUACgA5WXYTiAAQQBTACAAIABpAG4AdAAgACkALQAyACAAQQBTACAAdABlAHgAdAApACAAfAB8ACAAJwAgAGQAYQB5AHMAJwApACkAIAA9ACAAJwAwADgAJwANAAoAIABVAE4ASQBPAE4AIABBAEwATAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAAIAAsADAAIABBAFMAIABfADQACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADUACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADYACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA3AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOAAIZ9GRTZgNAAoAIAAsANGRTZggAEEAUwAgAF8AOQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMwAIZ9GRTZgNAAoAIABGAFIATwBNAA0ACgAgACAAn1s+fqF7BnQNAAoAIABXAEgARQBSAEUAIABzAHQAcgBmAHQAaQBtAGUAKAAnACUAbQAnACwAZABhAHQAZQAoACcAMQA5ADAAMAAtADAAMQAtADAAMQAnACwAJwArACcAIAB8AHwAIABDAEEAUwBUACgAQwBBAFMAVAAoAOVl2E4gAEEAUwAgACAAaQBuAHQAIAApAC0AMgAgAEEAUwAgAHQAZQB4AHQAKQAgAHwAfAAgACcAIABkAGEAeQBzACcAKQApACAAPQAgACcAMAA5ACcADQAKACAAVQBOAEkATwBOACAAQQBMAEwADQAKACAAUwBFAEwARQBDAFQADQAKACAAIAB0XqZeIABBAFMAIAB0XqZeDQAKACAAIAAsAER9VH6zMPwwyTAgAEEAUwAgAER9VH6zMPwwyTANAAoAIAAgACwA0XnudiAAQQBTACAA0Xnudg0ACgAgACAALAAwACAAQQBTACAAXwA0AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA1AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA2AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8ANwAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADgACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA5AAhn0ZFNmA0ACgAgACwA0ZFNmCAAQQBTACAAXwAxADAACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADMACGfRkU2YDQAKACAARgBSAE8ATQANAAoAIAAgAJ9bPn6hewZ0DQAKACAAVwBIAEUAUgBFACAAcwB0AHIAZgB0AGkAbQBlACgAJwAlAG0AJwAsAGQAYQB0AGUAKAAnADEAOQAwADAALQAwADEALQAwADEAJwAsACcAKwAnACAAfAB8ACAAQwBBAFMAVAAoAEMAQQBTAFQAKADlZdhOIABBAFMAIAAgAGkAbgB0ACAAKQAtADIAIABBAFMAIAB0AGUAeAB0ACkAIAB8AHwAIAAnACAAZABhAHkAcwAnACkAKQAgAD0AIAAnADEAMAAnAA0ACgAgAFUATgBJAE8ATgAgAEEATABMAA0ACgAgAFMARQBMAEUAQwBUAA0ACgAgACAAdF6mXiAAQQBTACAAdF6mXg0ACgAgACAALABEfVR+szD8MMkwIABBAFMAIABEfVR+szD8MMkwDQAKACAAIAAsANF57nYgAEEAUwAgANF57nYNAAoAIAAgACwAMAAgAEEAUwAgAF8ANAAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANQAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADcACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA4AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMAAIZ9GRTZgNAAoAIAAsANGRTZggAEEAUwAgAF8AMQAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAzAAhn0ZFNmA0ACgAgAEYAUgBPAE0ADQAKACAAIACfWz5+oXsGdA0ACgAgAFcASABFAFIARQAgAHMAdAByAGYAdABpAG0AZQAoACcAJQBtACcALABkAGEAdABlACgAJwAxADkAMAAwAC0AMAAxAC0AMAAxACcALAAnACsAJwAgAHwAfAAgAEMAQQBTAFQAKABDAEEAUwBUACgA5WXYTiAAQQBTACAAIABpAG4AdAAgACkALQAyACAAQQBTACAAdABlAHgAdAApACAAfAB8ACAAJwAgAGQAYQB5AHMAJwApACkAIAA9ACAAJwAxADEAJwANAAoAIABVAE4ASQBPAE4AIABBAEwATAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAAIAAsADAAIABBAFMAIABfADQACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADUACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADYACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA3AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADkACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADAACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADEACGfRkU2YDQAKACAALADRkU2YIABBAFMAIABfADEAMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAyAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMwAIZ9GRTZgNAAoAIABGAFIATwBNAA0ACgAgACAAn1s+fqF7BnQNAAoAIABXAEgARQBSAEUAIABzAHQAcgBmAHQAaQBtAGUAKAAnACUAbQAnACwAZABhAHQAZQAoACcAMQA5ADAAMAAtADAAMQAtADAAMQAnACwAJwArACcAIAB8AHwAIABDAEEAUwBUACgAQwBBAFMAVAAoAOVl2E4gAEEAUwAgACAAaQBuAHQAIAApAC0AMgAgAEEAUwAgAHQAZQB4AHQAKQAgAHwAfAAgACcAIABkAGEAeQBzACcAKQApACAAPQAgACcAMQAyACcADQAKACAAVQBOAEkATwBOACAAQQBMAEwADQAKACAAUwBFAEwARQBDAFQADQAKACAAIAB0XqZeIABBAFMAIAB0XqZeDQAKACAAIAAsAER9VH6zMPwwyTAgAEEAUwAgAER9VH6zMPwwyTANAAoAIAAgACwA0XnudiAAQQBTACAA0Xnudg0ACgAgACAALAAwACAAQQBTACAAXwA0AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA1AAhn0ZFNmA0ACgAgACAALAAwACAAQQBTACAAXwA2AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8ANwAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADgACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA5AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAwAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMQAyAAhn0ZFNmA0ACgAgACwA0ZFNmCAAQQBTACAAXwAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADMACGfRkU2YDQAKACAARgBSAE8ATQANAAoAIAAgAJ9bPn6hewZ0DQAKACAAVwBIAEUAUgBFACAAcwB0AHIAZgB0AGkAbQBlACgAJwAlAG0AJwAsAGQAYQB0AGUAKAAnADEAOQAwADAALQAwADEALQAwADEAJwAsACcAKwAnACAAfAB8ACAAQwBBAFMAVAAoAEMAQQBTAFQAKADlZdhOIABBAFMAIAAgAGkAbgB0ACAAKQAtADIAIABBAFMAIAB0AGUAeAB0ACkAIAB8AHwAIAAnACAAZABhAHkAcwAnACkAKQAgAD0AIAAnADAAMQAnAA0ACgAgAFUATgBJAE8ATgAgAEEATABMAA0ACgAgAFMARQBMAEUAQwBUAA0ACgAgACAAdF6mXiAAQQBTACAAdF6mXg0ACgAgACAALABEfVR+szD8MMkwIABBAFMAIABEfVR+szD8MMkwDQAKACAAIAAsANF57nYgAEEAUwAgANF57nYNAAoAIAAgACwAMAAgAEEAUwAgAF8ANAAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANQAIZ9GRTZgNAAoAIAAgACwAMAAgAEEAUwAgAF8ANgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADcACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA4AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMQAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEAMgAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADEACGfRkU2YDQAKACAALADRkU2YIABBAFMAIABfADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAzAAhn0ZFNmA0ACgAgAEYAUgBPAE0ADQAKACAAIACfWz5+oXsGdA0ACgAgAFcASABFAFIARQAgAHMAdAByAGYAdABpAG0AZQAoACcAJQBtACcALABkAGEAdABlACgAJwAxADkAMAAwAC0AMAAxAC0AMAAxACcALAAnACsAJwAgAHwAfAAgAEMAQQBTAFQAKABDAEEAUwBUACgA5WXYTiAAQQBTACAAIABpAG4AdAAgACkALQAyACAAQQBTACAAdABlAHgAdAApACAAfAB8ACAAJwAgAGQAYQB5AHMAJwApACkAIAA9ACAAJwAwADIAJwANAAoAIABVAE4ASQBPAE4AIABBAEwATAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAAIAAsADAAIABBAFMAIABfADQACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADUACGfRkU2YDQAKACAAIAAsADAAIABBAFMAIABfADYACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwA3AAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AOAAIZ9GRTZgNAAoAIAAsADAAIABBAFMAIABfADkACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADAACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADEACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxADIACGfRkU2YDQAKACAALAAwACAAQQBTACAAXwAxAAhn0ZFNmA0ACgAgACwAMAAgAEEAUwAgAF8AMgAIZ9GRTZgNAAoAIAAsANGRTZggAEEAUwAgAF8AMwAIZ9GRTZgNAAoAIABGAFIATwBNAA0ACgAgACAAn1s+fqF7BnQNAAoAIABXAEgARQBSAEUAIABzAHQAcgBmAHQAaQBtAGUAKAAnACUAbQAnACwAZABhAHQAZQAoACcAMQA5ADAAMAAtADAAMQAtADAAMQAnACwAJwArACcAIAB8AHwAIABDAEEAUwBUACgAQwBBAFMAVAAoAOVl2E4gAEEAUwAgACAAaQBuAHQAIAApAC0AMgAgAEEAUwAgAHQAZQB4AHQAKQAgAHwAfAAgACcAIABkAGEAeQBzACcAKQApACAAPQAgACcAMAAzACcADQAKACAAKQAgAJ9bPn7GlgiKDQAKAEcAUgBPAFUAUAAgAEIAWQANAAoAIACfWz5+xpYIii4AdF6mXg0ACgAgACwAn1s+fsaWCIouAER9VH6zMPwwyTANAAoAIAAsAJ9bPn7GlgiKLgDRee52IAA=" />
+        <ViewName>V実績集計</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_3月</Name>
+        </Item>
+      </Columns>
+      <Name>V実績集計</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>年度</Value>
+        </Item>
+        <Item type="System.String">
+          <Value>組織コード</Value>
+        </Item>
+        <Item type="System.String">
+          <Value>科目</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>5</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>事業部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>課</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>_3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>大科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>中科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>小科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+      </Columns>
+      <Name>予算入力</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>2</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>科目コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>収支区分</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>大科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>中科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>小科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+      </Columns>
+      <Name>科目マスタ</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>3</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>事業部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>課</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+      </Columns>
+      <Name>組織マスタ</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>4</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAdF6mXg0ACgAgACwA0Xnudg0ACgAgACwATQBBAFgAKADRee523jC5ML8wLgAtTtF57nYpACAAQQBTACAA0Xnudg1UDQAKACAALABTAFUATQAoAF8ANAAIZykAIABBAFMAIABfADQACGcNAAoAIAAsAFMAVQBNACgAXwA1AAhnKQAgAEEAUwAgAF8ANQAIZw0ACgAgACwAUwBVAE0AKABfADYACGcpACAAQQBTACAAXwA2AAhnDQAKACAALABTAFUATQAoAF8ANwAIZykAIABBAFMAIABfADcACGcNAAoAIAAsAFMAVQBNACgAXwA4AAhnKQAgAEEAUwAgAF8AOAAIZw0ACgAgACwAUwBVAE0AKABfADkACGcpACAAQQBTACAAXwA5AAhnDQAKACAALABTAFUATQAoAF8AMQAwAAhnKQAgAEEAUwAgAF8AMQAwAAhnDQAKACAALABTAFUATQAoAF8AMQAxAAhnKQAgAEEAUwAgAF8AMQAxAAhnDQAKACAALABTAFUATQAoAF8AMQAyAAhnKQAgAEEAUwAgAF8AMQAyAAhnDQAKACAALABTAFUATQAoAF8AMQAIZykAIABBAFMAIABfADEACGcNAAoAIAAsAFMAVQBNACgAXwAyAAhnKQAgAEEAUwAgAF8AMgAIZw0ACgAgACwAUwBVAE0AKABfADMACGcpACAAQQBTACAAXwAzAAhnDQAKAEYAUgBPAE0ADQAKACAAVgCfWz5+xpYIig0ACgAgAEwARQBGAFQAIABKAE8ASQBOACAA0Xnudt4wuTC/MCAADQAKACAAIAAgAE8ATgAgAFYAn1s+fsaWCIouANF57nYgAD0AIADRee523jC5ML8wLgDRee52szD8MMkwDQAKAEcAUgBPAFUAUAAgAEIAWQANAAoAIAB0XqZeDQAKACAALADRee52" />
+        <ViewName>V実績科目集計</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_3月</Name>
+        </Item>
+      </Columns>
+      <Name>V実績科目集計</Name>
+      <Weight>6</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAIAB0XqZeIABBAFMAIAB0XqZeDQAKACAAIAAsANF57nYgAEEAUwAgANF57nYNAAoAIAAgACwAUwBVAE0AKADRkU2YKQAgAEEAUwAgANGRTZgNAAoAIAAgACwATQBBAFgAKAAtTtF57nYpACAAQQBTACAA0Xnudg1UDQAKACAARgBSAE8ATQANAAoAIAAgAJ9bPn6hewZ0DQAKACAATABFAEYAVAAgAEoATwBJAE4AIADRee523jC5ML8wDQAKACAAIABPAE4AIACfWz5+oXsGdC4A0XnudiAAPQAgANF57nbeMLkwvzAuANF57nazMPwwyTANAAoAIABHAHIAbwB1AHAAIABiAHkADQAKACAAdF6mXg0ACgAgACwA0Xnudg==" />
+        <ViewName>V実績科目グラフ</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>金額</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目名</Name>
+        </Item>
+      </Columns>
+      <Name>V実績科目グラフ</Name>
+      <Weight>7</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQAIAANAAoAIAAgAHRepl4NAAoAIAAgACwABlJemA0ACgAgACAALABTAFUATQAoAF8ANAAIZykAIABBAFMAIAAU/whnDQAKACAAIAAsAFMAVQBNACgAXwA1AAhnKQAgAEEAUwAgABX/CGcNAAoAIAAgACwAUwBVAE0AKABfADYACGcpACAAQQBTACAAFv8IZw0ACgAgACAALABTAFUATQAoAF8ANwAIZykAIABBAFMAIAAX/whnDQAKACAAIAAsAFMAVQBNACgAXwA4AAhnKQAgAEEAUwAgABj/CGcNAAoAIAAgACwAUwBVAE0AKABfADkACGcpACAAQQBTACAAGf8IZw0ACgAgACAALABTAFUATQAoAF8AMQAwAAhnKQAgAEEAUwAgABH/EP8IZw0ACgAgACAALABTAFUATQAoAF8AMQAxAAhnKQAgAEEAUwAgABH/Ef8IZw0ACgAgACAALABTAFUATQAoAF8AMQAyAAhnKQAgAEEAUwAgABH/Ev8IZw0ACgAgACAALABTAFUATQAoAF8AMQAIZykAIABBAFMAIAAR/whnDQAKACAAIAAsAFMAVQBNACgAXwAyAAhnKQAgAEEAUwAgABL/CGcNAAoAIAAgACwAUwBVAE0AKABfADMACGcpACAAQQBTACAAE/8IZw0ACgAgAEYAUgBPAE0AIAANAAoAIAAgACIAVgCITp9bAE6niV8AGlm1ayIADQAKACAARwByAG8AdQBwACAAYgB5AA0ACgAgACAAdF6mXg0ACgAgACAALAAGUl6YDQAKADsA" />
+        <ViewName>V予実棒グラフ</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>分類</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>４月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>５月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>６月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>７月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>８月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>９月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１０月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１１月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１２月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>２月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>３月</Name>
+        </Item>
+      </Columns>
+      <Name>V予実棒グラフ</Name>
+      <Weight>8</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQAIAANAAoAIAAgAHRepl4NAAoAIAAgACwA0Xnudt4wuTC/MC4ALU7Ree52DQAKACAAIAAsAFMAVQBNACgAXwA0AAhnKQAgAEEAUwAgABT/CGcNAAoAIAAgACwAUwBVAE0AKABfADUACGcpACAAQQBTACAAFf8IZw0ACgAgACAALABTAFUATQAoAF8ANgAIZykAIABBAFMAIAAW/whnDQAKACAAIAAsAFMAVQBNACgAXwA3AAhnKQAgAEEAUwAgABf/CGcNAAoAIAAgACwAUwBVAE0AKABfADgACGcpACAAQQBTACAAGP8IZw0ACgAgACAALABTAFUATQAoAF8AOQAIZykAIABBAFMAIAAZ/whnDQAKACAAIAAsAFMAVQBNACgAXwAxADAACGcpACAAQQBTACAAEf8Q/whnDQAKACAAIAAsAFMAVQBNACgAXwAxADEACGcpACAAQQBTACAAEf8R/whnDQAKACAAIAAsAFMAVQBNACgAXwAxADIACGcpACAAQQBTACAAEf8S/whnDQAKACAAIAAsAFMAVQBNACgAXwAxAAhnKQAgAEEAUwAgABH/CGcNAAoAIAAgACwAUwBVAE0AKABfADIACGcpACAAQQBTACAAEv8IZw0ACgAgACAALABTAFUATQAoAF8AMwAIZykAIABBAFMAIAAT/whnDQAKACAARgBSAE8ATQAgAA0ACgAgACAAIgCITpd7oXsGdCIADQAKACAASQBOAE4ARQBSACAASgBPAEkATgAgACIA0Xnudt4wuTC/MCIADQAKACAAIABPAE4AIACITpd7oXsGdC4A0XnudiAAPQAgANF57nbeMLkwvzAuANF57nazMPwwyTANAAoAIABHAHIAbwB1AHAAIABiAHkADQAKACAAIAB0XqZeDQAKACAAIAAsANF57nbeMLkwvzAuAC1O0Xnudg==" />
+        <ViewName>V予算科目集計</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>中科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>４月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>５月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>６月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>７月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>８月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>９月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１０月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１１月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１２月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>１月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>２月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>３月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.FormulaColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <Formula>[４月]+[５月]+[６月]+[７月]+[８月]+[９月]+[１０月]+[１１月]+[１２月]+[１２月]+[１月]+[２月]+[３月]</Formula>
+          <Name>金額</Name>
+        </Item>
+      </Columns>
+      <Name>V予算科目集計</Name>
+      <Weight>9</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql>SELECT * FROM "予算管理";</CreateViewSql>
+        <ViewName>V予実全社</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>FGC_Creator</Name>
+        </Item>
+      </Columns>
+      <Name>V予実全社</Name>
+      <Weight>10</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAIAAgAIhOl3suAHRepl4NAAoAIAAgACAALACITpd7LgBEfVR+szD8MMkwDQAKACAAIAAgACwARH1Uft4wuTC/MC4Ai05taeiQDQAKACAAIAAgACwARH1Uft4wuTC/MC4A6JANAAoAIAAgACAALABEfVR+3jC5ML8wLgCyig0ACgAgACAAIAAsANF57nbeMLkwvzAuANF57nazMPwwyTAgAEEAUwAgANF57nazMPwwyTANAAoAIAAgACAALADRee523jC5ML8wLgAtTtF57nYgAEEAUwAgANF57nYNAAoAIAAgACAALACITpd7LgBfADQACGcgAEEAUwAgAIhONAAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANAAIZyAAQQBTACAAn1s0AAhnDQAKACAAIAAgACwAn1s+fi4AXwA0AAhnIAAtACAAIACITpd7LgBfADQACGcgAEEAUwAgAO5dNAAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANAAIZyAALwAgACAAiE6Xey4AXwA0AAhnIABBAFMAIACHczQACGcNAAoAIAAgACAALACITpd7LgBfADUACGcgAEEAUwAgAIhONQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANQAIZyAAQQBTACAAn1s1AAhnDQAKACAAIAAgACwAn1s+fi4AXwA1AAhnIAAtACAAIACITpd7LgBfADUACGcgAEEAUwAgAO5dNQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANQAIZyAALwAgACAAiE6Xey4AXwA1AAhnIABBAFMAIACHczUACGcNAAoAIAAgACAALACITpd7LgBfADYACGcgAEEAUwAgAIhONgAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANgAIZyAAQQBTACAAn1s2AAhnDQAKACAAIAAgACwAn1s+fi4AXwA2AAhnIAAtACAAIACITpd7LgBfADYACGcgAEEAUwAgAO5dNgAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANgAIZyAALwAgACAAiE6Xey4AXwA2AAhnIABBAFMAIACHczYACGcNAAoAIAAgACAALACITpd7LgBfADcACGcgAEEAUwAgAIhONwAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANwAIZyAAQQBTACAAn1s3AAhnDQAKACAAIAAgACwAn1s+fi4AXwA3AAhnIAAtACAAIACITpd7LgBfADcACGcgAEEAUwAgAO5dNwAIZw0ACgAgACAAIAAsAJ9bPn4uAF8ANwAIZyAALwAgACAAiE6Xey4AXwA3AAhnIABBAFMAIACHczcACGcNAAoAIAAgACAALACITpd7LgBfADgACGcgAEEAUwAgAIhOOAAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AOAAIZyAAQQBTACAAn1s4AAhnDQAKACAAIAAgACwAn1s+fi4AXwA4AAhnIAAtACAAIACITpd7LgBfADgACGcgAEEAUwAgAO5dOAAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AOAAIZyAALwAgACAAiE6Xey4AXwA4AAhnIABBAFMAIACHczgACGcNAAoAIAAgACAALACITpd7LgBfADkACGcgAEEAUwAgAIhOOQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AOQAIZyAAQQBTACAAn1s5AAhnDQAKACAAIAAgACwAn1s+fi4AXwA5AAhnIAAtACAAIACITpd7LgBfADkACGcgAEEAUwAgAO5dOQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AOQAIZyAALwAgACAAiE6Xey4AXwA5AAhnIABBAFMAIACHczkACGcNAAoAIAAgACAALACITpd7LgBfADEAMAAIZyAAQQBTACAAiE4xADAACGcNAAoAIAAgACAALACfWz5+LgBfADEAMAAIZyAAQQBTACAAn1sxADAACGcNAAoAIAAgACAALACfWz5+LgBfADEAMAAIZyAALQAgACAAiE6Xey4AXwAxADAACGcgAEEAUwAgAO5dMQAwAAhnDQAKACAAIAAgACwAn1s+fi4AXwAxADAACGcgAC8AIAAgAIhOl3suAF8AMQAwAAhnIABBAFMAIACHczEAMAAIZw0ACgAgACAAIAAsAIhOl3suAF8AMQAxAAhnIABBAFMAIACITjEAMQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMQAxAAhnIABBAFMAIACfWzEAMQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMQAxAAhnIAAtACAAIACITpd7LgBfADEAMQAIZyAAQQBTACAA7l0xADEACGcNAAoAIAAgACAALACfWz5+LgBfADEAMQAIZyAALwAgACAAiE6Xey4AXwAxADEACGcgAEEAUwAgAIdzMQAxAAhnDQAKACAAIAAgACwAiE6Xey4AXwAxADIACGcgAEEAUwAgAIhOMQAyAAhnDQAKACAAIAAgACwAn1s+fi4AXwAxADIACGcgAEEAUwAgAJ9bMQAyAAhnDQAKACAAIAAgACwAn1s+fi4AXwAxADIACGcgAC0AIAAgAIhOl3suAF8AMQAyAAhnIABBAFMAIADuXTEAMgAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMQAyAAhnIAAvACAAIACITpd7LgBfADEAMgAIZyAAQQBTACAAh3MxADIACGcNAAoAIAAgACAALACITpd7LgBfADEACGcgAEEAUwAgAIhOMQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMQAIZyAAQQBTACAAn1sxAAhnDQAKACAAIAAgACwAn1s+fi4AXwAxAAhnIAAtACAAIACITpd7LgBfADEACGcgAEEAUwAgAO5dMQAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMQAIZyAALwAgACAAiE6Xey4AXwAxAAhnIABBAFMAIACHczEACGcNAAoAIAAgACAALACITpd7LgBfADIACGcgAEEAUwAgAIhOMgAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMgAIZyAAQQBTACAAn1syAAhnDQAKACAAIAAgACwAn1s+fi4AXwAyAAhnIAAtACAAIACITpd7LgBfADIACGcgAEEAUwAgAO5dMgAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMgAIZyAALwAgACAAiE6Xey4AXwAyAAhnIABBAFMAIACHczIACGcNAAoAIAAgACAALACITpd7LgBfADMACGcgAEEAUwAgAIhOMwAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMwAIZyAAQQBTACAAn1szAAhnDQAKACAAIAAgACwAn1s+fi4AXwAzAAhnIAAtACAAIACITpd7LgBfADMACGcgAEEAUwAgAO5dMwAIZw0ACgAgACAAIAAsAJ9bPn4uAF8AMwAIZyAALwAgACAAiE6Xey4AXwAzAAhnIABBAFMAIACHczMACGcNAAoARgBSAE8ATQANAAoAIAAgACAAiE6Xe6F7BnQgAEEAUwAgAIhOl3sNAAoAIABMAEUARgBUACAASgBPAEkATgAgAFYAn1s+fsaWCIogAEEAUwAgAJ9bPn4gAA0ACgAgACAAIABPAE4AIACITpd7LgB0XqZeIAA9ACAAn1s+fi4AdF6mXiAADQAKACAAIAAgAEEATgBEACAAiE6Xey4ARH1UfrMw/DDJMCAAPQAgAJ9bPn4uAER9VH6zMPwwyTAgAA0ACgAgACAAIABBAE4ARAAgAIhOl3suANF57nYgAD0AIACfWz5+LgDRee52IAANAAoAIABMAEUARgBUACAASgBPAEkATgAgANF57nbeMLkwvzAgAA0ACgAgACAAIABPAE4AIACITpd7LgDRee52IAA9ACAA0Xnudt4wuTC/MC4A0XnudrMw/DDJMA0ACgAgAEwARQBGAFQAIABKAE8ASQBOACAARH1Uft4wuTC/MCAADQAKACAAIAAgAE8ATgAgAIhOl3suAER9VH6zMPwwyTAgAD0AIABEfVR+3jC5ML8wLgBEfVR+szD8MMkwDQAKAA==" />
+        <ViewName>V予実一覧</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>事業部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>課</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>予3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>実3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>差3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>率3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.StatisticColumn" assembly="Forguncy">
+          <AggregateFunction>SUM</AggregateFunction>
+          <ColumnType>System.Double</ColumnType>
+          <DataColumnName>予4月</DataColumnName>
+          <Name>達成率</Name>
+        </Item>
+      </Columns>
+      <Name>V予実一覧</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>年度</Value>
+        </Item>
+        <Item type="System.String">
+          <Value>組織コード</Value>
+        </Item>
+        <Item type="System.String">
+          <Value>科目コード</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>11</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <AutoIncrement>True</AutoIncrement>
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>ID</Name>
+          <Required>True</Required>
+          <Unique>True</Unique>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>_3月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_Creator</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_CreateDate</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.UserExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <Name>FGC_LastModifier</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.DateExtraBingingColumn" assembly="Forguncy">
+          <ColumnType>System.DateTime</ColumnType>
+          <Name>FGC_LastModifyDate</Name>
+        </Item>
+      </Columns>
+      <Name>予算管理</Name>
+      <PrimaryKey>
+        <Item type="System.String">
+          <Value>ID</Value>
+        </Item>
+      </PrimaryKey>
+      <Weight>0</Weight>
+    </Item>
+    <Item class="Forguncy.Model.Tables.Table" assembly="Forguncy">
+      <BuiltInViewInfo>
+        <CreateViewSql Base64="UwBFAEwARQBDAFQADQAKACAAiE6fWy4AdF6mXg0ACgAgACAALACITp9bLgBEfVR+szD8MMkwIABBAFMAIABEfVR+szD8MMkwDQAKACAAIAAgACwATQBBAFgAKABEfVR+3jC5ML8wLgCLTm1p6JApACAAQQBTACAAi05taeiQDQAKACAAIAAgACwATQBBAFgAKABEfVR+3jC5ML8wLgDokCkAIABBAFMAIADokA0ACgAgACAAIAAsAE0AQQBYACgARH1Uft4wuTC/MC4AsoopACAAQQBTACAAsooNAAoAIAAgACAALACITp9bLgDRee52DQAKACAAIAAgACwATQBBAFgAKADRee523jC5ML8wLgAtTtF57nYpACAAQQBTACAA0Xnudg1UDQAKACAALACITp9bLgAGUl6YIABBAFMAIAAGUl6YDQAKACAALABTAFUATQAoAIhOn1suAF8ANAAIZykAIABBAFMAIABfADQACGcNAAoAIAAsAFMAVQBNACgAiE6fWy4AXwA1AAhnKQAgAEEAUwAgAF8ANQAIZw0ACgAgACwAUwBVAE0AKACITp9bLgBfADYACGcpACAAQQBTACAAXwA2AAhnDQAKACAALABTAFUATQAoAIhOn1suAF8ANwAIZykAIABBAFMAIABfADcACGcNAAoAIAAsAFMAVQBNACgAiE6fWy4AXwA4AAhnKQAgAEEAUwAgAF8AOAAIZw0ACgAgACwAUwBVAE0AKACITp9bLgBfADkACGcpACAAQQBTACAAXwA5AAhnDQAKACAALABTAFUATQAoAIhOn1suAF8AMQAwAAhnKQAgAEEAUwAgAF8AMQAwAAhnDQAKACAALABTAFUATQAoAIhOn1suAF8AMQAxAAhnKQAgAEEAUwAgAF8AMQAxAAhnDQAKACAALABTAFUATQAoAIhOn1suAF8AMQAyAAhnKQAgAEEAUwAgAF8AMQAyAAhnDQAKACAALABTAFUATQAoAIhOn1suAF8AMQAIZykAIABBAFMAIABfADEACGcNAAoAIAAsAFMAVQBNACgAiE6fWy4AXwAyAAhnKQAgAEEAUwAgAF8AMgAIZw0ACgAgACwAUwBVAE0AKACITp9bLgBfADMACGcpACAAQQBTACAAXwAzAAhnDQAKAEYAUgBPAE0ADQAKACAAKAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAAIAAsACcAiE6XeycAIABBAFMAIAAGUl6YDQAKACAALAAxACAAQQBTACAAUwBPAFIAVABLAEUAWQANAAoAIAAgACwAXwA0AAhnIABBAFMAIABfADQACGcNAAoAIAAgACwAXwA1AAhnIABBAFMAIABfADUACGcNAAoAIAAgACwAXwA2AAhnIABBAFMAIABfADYACGcNAAoAIAAgACwAXwA3AAhnIABBAFMAIABfADcACGcNAAoAIAAgACwAXwA4AAhnIABBAFMAIABfADgACGcNAAoAIAAgACwAXwA5AAhnIABBAFMAIABfADkACGcNAAoAIAAgACwAXwAxADAACGcgAEEAUwAgAF8AMQAwAAhnDQAKACAAIAAsAF8AMQAxAAhnIABBAFMAIABfADEAMQAIZw0ACgAgACAALABfADEAMgAIZyAAQQBTACAAXwAxADIACGcNAAoAIAAgACwAXwAxAAhnIABBAFMAIABfADEACGcNAAoAIAAgACwAXwAyAAhnIABBAFMAIABfADIACGcNAAoAIAAgACwAXwAzAAhnIABBAFMAIABfADMACGcNAAoAIABGAFIATwBNAA0ACgAgACAAiE6Xe6F7BnQgAEEAUwAgAIhOl3sNAAoAIABVAE4ASQBPAE4AIABBAEwATAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALADRee52IABBAFMAIADRee52DQAKACAALAAnAJ9bPn4nACAAQQBTACAABlJemA0ACgAgACwAMgAgAEEAUwAgAFMATwBSAFQASwBFAFkADQAKACAAIAAsAF8ANAAIZyAAQQBTACAAXwA0AAhnDQAKACAAIAAsAF8ANQAIZyAAQQBTACAAXwA1AAhnDQAKACAAIAAsAF8ANgAIZyAAQQBTACAAXwA2AAhnDQAKACAAIAAsAF8ANwAIZyAAQQBTACAAXwA3AAhnDQAKACAAIAAsAF8AOAAIZyAAQQBTACAAXwA4AAhnDQAKACAAIAAsAF8AOQAIZyAAQQBTACAAXwA5AAhnDQAKACAAIAAsAF8AMQAwAAhnIABBAFMAIABfADEAMAAIZw0ACgAgACAALABfADEAMQAIZyAAQQBTACAAXwAxADEACGcNAAoAIAAgACwAXwAxADIACGcgAEEAUwAgAF8AMQAyAAhnDQAKACAAIAAsAF8AMQAIZyAAQQBTACAAXwAxAAhnDQAKACAAIAAsAF8AMgAIZyAAQQBTACAAXwAyAAhnDQAKACAAIAAsAF8AMwAIZyAAQQBTACAAXwAzAAhnDQAKACAARgBSAE8ATQANAAoAIAAgAFYAn1s+fsaWCIogAEEAUwAgAJ9bPn4gAA0ACgBVAE4ASQBPAE4AIABBAEwATAANAAoAIABTAEUATABFAEMAVAANAAoAIAAgAIhOl3suAHRepl4gAEEAUwAgAHRepl4NAAoAIAAgACwAiE6Xey4ARH1UfrMw/DDJMCAAQQBTACAARH1UfrMw/DDJMA0ACgAgACAALACITpd7LgDRee52IABBAFMAIADRee52DQAKACAALAAnAO5dcHUnACAAQQBTACAABlJemA0ACgAgACwAMwAgAEEAUwAgAFMATwBSAFQASwBFAFkADQAKACAAIAAsAJ9bPn4uAF8ANAAIZyAALQAgAIhOl3suAF8ANAAIZyAAQQBTACAAXwA0AAhnDQAKACAAIAAsAJ9bPn4uAF8ANQAIZyAALQAgAIhOl3suAF8ANQAIZyAAQQBTACAAXwA1AAhnDQAKACAAIAAsAJ9bPn4uAF8ANgAIZyAALQAgAIhOl3suAF8ANgAIZyAAQQBTACAAXwA2AAhnDQAKACAAIAAsAJ9bPn4uAF8ANwAIZyAALQAgAIhOl3suAF8ANwAIZyAAQQBTACAAXwA3AAhnDQAKACAAIAAsAJ9bPn4uAF8AOAAIZyAALQAgAIhOl3suAF8AOAAIZyAAQQBTACAAXwA4AAhnDQAKACAAIAAsAJ9bPn4uAF8AOQAIZyAALQAgAIhOl3suAF8AOQAIZyAAQQBTACAAXwA5AAhnDQAKACAAIAAsAJ9bPn4uAF8AMQAwAAhnIAAtACAAiE6Xey4AXwAxADAACGcgAEEAUwAgAF8AMQAwAAhnDQAKACAAIAAsAJ9bPn4uAF8AMQAxAAhnIAAtACAAiE6Xey4AXwAxADEACGcgAEEAUwAgAF8AMQAxAAhnDQAKACAAIAAsAJ9bPn4uAF8AMQAyAAhnIAAtACAAiE6Xey4AXwAxADIACGcgAEEAUwAgAF8AMQAyAAhnDQAKACAAIAAsAJ9bPn4uAF8AMQAIZyAALQAgAIhOl3suAF8AMQAIZyAAQQBTACAAXwAxAAhnDQAKACAAIAAsAJ9bPn4uAF8AMgAIZyAALQAgAIhOl3suAF8AMgAIZyAAQQBTACAAXwAyAAhnDQAKACAAIAAsAJ9bPn4uAF8AMwAIZyAALQAgAIhOl3suAF8AMwAIZyAAQQBTACAAXwAzAAhnDQAKACAARgBSAE8ATQANAAoAIAAgAIhOl3uhewZ0IABBAFMAIACITpd7DQAKACAATABFAEYAVAAgAEoATwBJAE4AIABWAJ9bPn7GlgiKIABBAFMAIACfWz5+IAANAAoAIAAgACAATwBOACAAiE6Xey4AdF6mXiAAPQAgAJ9bPn4uAHRepl4NAAoAIAAgACAAQQBOAEQAIACITpd7LgBEfVR+szD8MMkwIAA9ACAAn1s+fi4ARH1UfrMw/DDJMA0ACgAgACAAIABBAE4ARAAgAIhOl3suANF57nYgAD0AIACfWz5+LgDRee52DQAKACAAKQAgAIhOn1sNAAoAIABMAEUARgBUACAASgBPAEkATgAgANF57nbeMLkwvzAgAA0ACgAgACAAIABPAE4AIACITp9bLgDRee52IAA9ACAA0Xnudt4wuTC/MC4A0XnudrMw/DDJMA0ACgAgAEwARQBGAFQAIABKAE8ASQBOACAARH1Uft4wuTC/MCAADQAKACAAIAAgAE8ATgAgAIhOn1suAER9VH6zMPwwyTAgAD0AIABEfVR+3jC5ML8wLgBEfVR+szD8MMkwDQAKAEcAUgBPAFUAUAAgAEIAWQANAAoAIACITp9bLgB0XqZeDQAKACAALACITp9bLgBEfVR+szD8MMkwDQAKACAALACITp9bLgDRee52IAANAAoAIAAsAIhOn1suAAZSXpgNAAoAIAAsAIhOn1suAFMATwBSAFQASwBFAFkA" />
+        <ViewName>V予実一覧_多段</ViewName>
+      </BuiltInViewInfo>
+      <Columns>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Double</ColumnType>
+          <DatabaseColumnType>System.Double</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>年度</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.String</ColumnType>
+          <DatabaseColumnType>System.String</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>組織コード</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>事業部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>部</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>課</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Int64</ColumnType>
+          <DatabaseColumnType>System.Int64</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>科目名</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>分類</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_4月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_5月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_6月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_7月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_8月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_9月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_10月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_11月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_12月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_1月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_2月</Name>
+        </Item>
+        <Item class="Forguncy.Model.Tables.BindingColumn" assembly="Forguncy">
+          <ColumnType>System.Object</ColumnType>
+          <DatabaseColumnType>System.Object</DatabaseColumnType>
+          <DefaultValue class="System.DBNull" assembly="mscorlib" />
+          <MaxLength>-1</MaxLength>
+          <Name>_3月</Name>
+        </Item>
+      </Columns>
+      <Name>V予実一覧_多段</Name>
+      <Weight>12</Weight>
+    </Item>
+  </Tables>
+</TableSet>

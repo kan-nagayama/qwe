@@ -1,0 +1,1018 @@
+{
+  "Rows": {
+    "Sizes": {
+      "0": 9.0,
+      "1": 25.0,
+      "2": 22.0,
+      "3": 7.0,
+      "6": 28.0,
+      "7": 28.0
+    },
+    "Count": 43
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,1": "Forguncy予実管理テンプレート",
+    "4,4": "      予算",
+    "4,18": "      実績",
+    "4,33": "      予実比較",
+    "4,54": " 対象年度",
+    "6,5": "予算の参照",
+    "6,19": "実績値の参照",
+    "6,34": "予実集計表",
+    "6,45": "ダッシュボード",
+    "7,5": "予算の入力",
+    "7,19": "実績値集計(ピボットテーブル)",
+    "7,34": "予実集計表(多段表示)"
+  },
+  "AttachInfos": {
+    "4,4": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, Forguncy",
+        "Text": "      予算",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "HorizontalAlignment": 0,
+        "ImagePath": "add2.png",
+        "BuiltIn": true
+      }
+    },
+    "4,18": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, Forguncy",
+        "Text": "      実績",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "HorizontalAlignment": 0,
+        "ImagePath": "File.png",
+        "BuiltIn": true
+      }
+    },
+    "4,33": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, Forguncy",
+        "Text": "      予実比較",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "HorizontalAlignment": 0,
+        "ImagePath": "Chart.png",
+        "BuiltIn": true
+      }
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "スタートページ",
+            "PassValues": []
+          }
+        ],
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "ImagePath": "Home.png",
+        "BuiltIn": true
+      }
+    },
+    "6,5": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "予算管理_一覧ページ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=予算管理_一覧ページ!Year"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "予算の参照",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "6,19": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "実績管理_一覧ページ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=実績管理_一覧ページ!Year"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "実績値の参照",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "6,34": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "予実一覧",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=予実一覧!Year"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "予実集計表",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "6,45": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "ダッシュボード",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=ダッシュボード!Year"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "ダッシュボード",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "7,5": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "予算入力ページ",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=予算入力ページ!Year"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "予算の入力",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "7,19": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "実績クロス集計",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=実績クロス集計!Year"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "実績値集計(ピボットテーブル)",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "7,34": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "PageName": "予実一覧_多段",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "SerializeProperty": "=予実管理マスターページ１!BC7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=予実一覧_多段!Year"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "予実集計表(多段表示)",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Normal5",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          }
+        ]
+      }
+    },
+    "8,0": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontSize": 29.333333969116211,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontSize": 29.333333969116211,
+        "FontWeight": 1,
+        "Foreground": 5,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "FontSize": 13.333333015441895,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "Background": 6,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontSize": 18.666666030883789,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 6,
+        "FontSize": 18.666666030883789,
+        "FontWeight": 1,
+        "Foreground": 7,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "Formatter": 3,
+        "Underline": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontSize": 18.666666030883789,
+        "FontWeight": 1,
+        "Foreground": 10,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 9,
+        "FontSize": 18.666666030883789,
+        "FontWeight": 1,
+        "Foreground": 10,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0,
+        "BorderRight": null
+      },
+      {
+        "Background": 11,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFEEECE1",
+        "Bold",
+        "Accent 4 0",
+        "[AUTO]General",
+        "Left",
+        "#FF31869B",
+        "#FF9BBB59",
+        "#FFFFFFFF",
+        "Center",
+        "#FFF2F2F2",
+        "#FFE46C0A",
+        "#FFD3D3D3",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 5,
+          "Color": 7
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,10": 0,
+      "0,21": 0,
+      "0,44": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 0,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "1,1": 1,
+      "1,2": 2,
+      "1,3": 2,
+      "1,4": 2,
+      "1,5": 2,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 2,
+      "1,12": 2,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 2,
+      "1,17": 2,
+      "1,18": 2,
+      "1,19": 2,
+      "1,20": 2,
+      "1,21": 2,
+      "1,22": 2,
+      "1,23": 2,
+      "1,24": 2,
+      "1,25": 2,
+      "1,51": 3,
+      "1,52": 3,
+      "1,53": 3,
+      "1,54": 3,
+      "1,55": 3,
+      "1,56": 3,
+      "1,57": 3,
+      "1,58": 3,
+      "1,59": 3,
+      "2,1": 2,
+      "2,2": 2,
+      "2,3": 2,
+      "2,4": 2,
+      "2,5": 2,
+      "2,6": 2,
+      "2,7": 2,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 2,
+      "2,11": 2,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "2,16": 2,
+      "2,17": 2,
+      "2,18": 2,
+      "2,19": 2,
+      "2,20": 2,
+      "2,21": 2,
+      "2,22": 2,
+      "2,23": 2,
+      "2,24": 2,
+      "2,25": 2,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,31": 0,
+      "2,32": 0,
+      "2,33": 0,
+      "2,34": 0,
+      "2,35": 0,
+      "2,36": 0,
+      "2,37": 0,
+      "2,38": 0,
+      "2,39": 0,
+      "2,40": 0,
+      "2,41": 0,
+      "2,52": 0,
+      "2,53": 0,
+      "2,54": 0,
+      "2,55": 0,
+      "2,56": 0,
+      "2,57": 0,
+      "2,58": 0,
+      "2,59": 0,
+      "3,10": 0,
+      "3,21": 0,
+      "3,44": 0,
+      "3,52": 0,
+      "3,53": 0,
+      "3,54": 0,
+      "3,55": 0,
+      "3,56": 0,
+      "3,57": 0,
+      "3,58": 0,
+      "3,59": 0,
+      "4,0": 4,
+      "4,1": 4,
+      "4,2": 4,
+      "4,3": 5,
+      "4,4": 6,
+      "4,5": 6,
+      "4,6": 6,
+      "4,7": 6,
+      "4,8": 6,
+      "4,9": 6,
+      "4,10": 6,
+      "4,11": 6,
+      "4,12": 6,
+      "4,13": 6,
+      "4,14": 6,
+      "4,15": 6,
+      "4,16": 6,
+      "4,17": 7,
+      "4,18": 8,
+      "4,19": 6,
+      "4,20": 6,
+      "4,21": 6,
+      "4,22": 6,
+      "4,23": 6,
+      "4,24": 6,
+      "4,25": 6,
+      "4,26": 6,
+      "4,27": 6,
+      "4,28": 6,
+      "4,29": 6,
+      "4,30": 6,
+      "4,31": 6,
+      "4,32": 7,
+      "4,33": 8,
+      "4,34": 6,
+      "4,35": 6,
+      "4,36": 6,
+      "4,37": 6,
+      "4,38": 6,
+      "4,39": 6,
+      "4,40": 6,
+      "4,41": 6,
+      "4,42": 6,
+      "4,43": 6,
+      "4,44": 6,
+      "4,45": 6,
+      "4,46": 6,
+      "4,47": 6,
+      "4,48": 6,
+      "4,49": 6,
+      "4,50": 6,
+      "4,51": 6,
+      "4,52": 6,
+      "4,53": 7,
+      "4,54": 8,
+      "4,55": 9,
+      "4,56": 9,
+      "4,57": 9,
+      "4,58": 9,
+      "4,59": 9,
+      "5,0": 4,
+      "5,1": 10,
+      "5,2": 10,
+      "5,3": 5,
+      "5,4": 6,
+      "5,5": 6,
+      "5,6": 6,
+      "5,7": 6,
+      "5,8": 6,
+      "5,9": 6,
+      "5,10": 6,
+      "5,11": 6,
+      "5,12": 6,
+      "5,13": 6,
+      "5,14": 6,
+      "5,15": 6,
+      "5,16": 6,
+      "5,17": 7,
+      "5,18": 8,
+      "5,19": 6,
+      "5,20": 6,
+      "5,21": 6,
+      "5,22": 6,
+      "5,23": 6,
+      "5,24": 6,
+      "5,25": 6,
+      "5,26": 6,
+      "5,27": 6,
+      "5,28": 6,
+      "5,29": 6,
+      "5,30": 6,
+      "5,31": 6,
+      "5,32": 7,
+      "5,33": 8,
+      "5,34": 6,
+      "5,35": 6,
+      "5,36": 6,
+      "5,37": 6,
+      "5,38": 6,
+      "5,39": 6,
+      "5,40": 6,
+      "5,41": 6,
+      "5,42": 6,
+      "5,43": 6,
+      "5,44": 6,
+      "5,45": 6,
+      "5,46": 6,
+      "5,47": 6,
+      "5,48": 6,
+      "5,49": 6,
+      "5,50": 6,
+      "5,51": 6,
+      "5,52": 6,
+      "5,53": 7,
+      "5,54": 11,
+      "5,55": 9,
+      "5,56": 9,
+      "5,57": 9,
+      "5,58": 9,
+      "5,59": 9,
+      "6,0": 4,
+      "6,1": 10,
+      "6,2": 10,
+      "6,3": 5,
+      "6,4": 12,
+      "6,5": 13,
+      "6,6": 12,
+      "6,7": 12,
+      "6,8": 12,
+      "6,9": 12,
+      "6,10": 12,
+      "6,11": 12,
+      "6,12": 12,
+      "6,13": 12,
+      "6,14": 12,
+      "6,15": 12,
+      "6,16": 12,
+      "6,17": 12,
+      "6,18": 14,
+      "6,19": 13,
+      "6,20": 12,
+      "6,21": 12,
+      "6,22": 12,
+      "6,23": 12,
+      "6,24": 12,
+      "6,25": 12,
+      "6,26": 12,
+      "6,27": 12,
+      "6,28": 12,
+      "6,29": 12,
+      "6,30": 12,
+      "6,31": 12,
+      "6,32": 12,
+      "6,33": 14,
+      "6,34": 13,
+      "6,35": 12,
+      "6,36": 12,
+      "6,37": 12,
+      "6,38": 12,
+      "6,39": 12,
+      "6,40": 12,
+      "6,41": 12,
+      "6,42": 12,
+      "6,43": 12,
+      "6,44": 12,
+      "6,45": 13,
+      "6,46": 12,
+      "6,47": 12,
+      "6,48": 12,
+      "6,49": 12,
+      "6,50": 12,
+      "6,51": 15,
+      "6,52": 15,
+      "6,53": 12,
+      "6,54": 16,
+      "6,55": 15,
+      "6,56": 15,
+      "6,57": 15,
+      "6,58": 15,
+      "6,59": 15,
+      "7,0": 4,
+      "7,1": 4,
+      "7,2": 4,
+      "7,3": 5,
+      "7,4": 12,
+      "7,5": 13,
+      "7,6": 12,
+      "7,7": 12,
+      "7,8": 12,
+      "7,9": 12,
+      "7,10": 12,
+      "7,11": 12,
+      "7,12": 12,
+      "7,13": 12,
+      "7,14": 12,
+      "7,15": 12,
+      "7,16": 12,
+      "7,17": 12,
+      "7,18": 14,
+      "7,19": 13,
+      "7,20": 12,
+      "7,21": 12,
+      "7,22": 12,
+      "7,23": 12,
+      "7,24": 12,
+      "7,25": 12,
+      "7,26": 12,
+      "7,27": 12,
+      "7,28": 12,
+      "7,29": 12,
+      "7,30": 12,
+      "7,31": 12,
+      "7,32": 12,
+      "7,33": 14,
+      "7,34": 13,
+      "7,35": 12,
+      "7,36": 12,
+      "7,37": 12,
+      "7,38": 12,
+      "7,39": 12,
+      "7,40": 12,
+      "7,41": 12,
+      "7,42": 12,
+      "7,43": 12,
+      "7,44": 12,
+      "7,45": 12,
+      "7,46": 12,
+      "7,47": 12,
+      "7,48": 12,
+      "7,49": 12,
+      "7,50": 12,
+      "7,51": 15,
+      "7,52": 15,
+      "7,53": 12,
+      "7,54": 16,
+      "7,55": 15,
+      "7,56": 15,
+      "7,57": 15,
+      "7,58": 15,
+      "7,59": 15,
+      "8,0": 17,
+      "42,10": 0,
+      "42,21": 0,
+      "42,44": 0,
+      "42,52": 0,
+      "42,53": 0,
+      "42,54": 0,
+      "42,55": 0,
+      "42,56": 0,
+      "42,57": 0,
+      "42,58": 0,
+      "42,59": 0
+    },
+    "RowStyles": {
+      "0": 18,
+      "1": 18,
+      "2": 18,
+      "3": 18
+    },
+    "SheetStyle": {
+      "FontFamily": 12,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,2,25",
+    "1,51,1,9",
+    "4,18,2,15",
+    "4,33,2,21",
+    "4,54,2,6",
+    "6,54,2,6",
+    "8,0,34,60",
+    "5,1,2,2",
+    "4,4,2,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, Forguncy"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "Year",
+      "Formula": "予実管理マスターページ１!$BC$7"
+    }
+  ]
+}

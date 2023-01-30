@@ -1,0 +1,1660 @@
+{
+  "Rows": {
+    "Sizes": {
+      "0": 15.0,
+      "1": 25.0,
+      "2": 25.0,
+      "3": 25.0,
+      "4": 25.0
+    },
+    "Count": 40
+  },
+  "Cols": {
+    "Sizes": {
+      "0": 52.0,
+      "1": 52.0,
+      "2": 20.0,
+      "3": 64.0,
+      "4": 64.0,
+      "17": 60.0
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2
+    ],
+    "Count": 18,
+    "DefaultSize": 88.0
+  },
+  "Values": {
+    "1,0": "科目円",
+    "1,3": "年度",
+    "1,4": "分類",
+    "1,5": "4月",
+    "1,6": "5月",
+    "1,7": "6月",
+    "1,8": "7月",
+    "1,9": "8月",
+    "1,10": "9月",
+    "1,11": "10月",
+    "1,12": "11月",
+    "1,13": "12月",
+    "1,14": "1月",
+    "1,15": "2月",
+    "1,16": "3月"
+  },
+  "ArrayFormulas": {
+    "2,3,3,14": "IFERROR(ODATA(\"V予実棒グラフ?$select=*&$filter=年度 eq \"&IF(ISBLANK(Year),\"null\",Year)),\"\")"
+  },
+  "AttachInfos": {
+    "2,0": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "V実績科目グラフ",
+        "RowIndex": 2,
+        "ColumnCount": 2,
+        "RowCount": 6,
+        "ColumnOperation": 1,
+        "ShowGridLine": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "V実績科目グラフ",
+            "ColumnName": "年度"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "SerializeProperty": "=ダッシュボード!Year"
+          },
+          "Id": "d066e62d-e037-4ec0-be1a-2f64755315f6"
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V実績科目グラフ",
+                "ColumnName": "金額"
+              },
+              "Order": 1
+            }
+          ],
+          "Id": "cb2a3115-abee-4d54-b44f-e053aa2ab8ae"
+        },
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "3,0": {
+      "BindingInfo": {
+        "TableName": "V実績科目グラフ",
+        "ColumnName": "科目名"
+      }
+    },
+    "3,1": {
+      "BindingInfo": {
+        "TableName": "V実績科目グラフ",
+        "ColumnName": "金額"
+      }
+    },
+    "9,0": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "V予算科目集計",
+        "RowIndex": 9,
+        "ColumnCount": 2,
+        "RowCount": 6,
+        "ColumnOperation": 1,
+        "ShowGridLine": true,
+        "Name": "リストビュー2",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "V予算科目集計",
+            "ColumnName": "年度"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "SerializeProperty": "=ダッシュボード!Year"
+          },
+          "Id": "48a9d75a-336c-4331-869d-c82fa1607aca"
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "V予算科目集計",
+                "ColumnName": "金額"
+              },
+              "Order": 1
+            }
+          ],
+          "Id": "bde1e7ed-3e57-441f-b239-174b0adf34c1"
+        },
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "10,0": {
+      "BindingInfo": {
+        "TableName": "V予算科目集計",
+        "ColumnName": "中科目"
+      }
+    },
+    "10,1": {
+      "BindingInfo": {
+        "TableName": "V予算科目集計",
+        "ColumnName": "金額"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "FontSize": 13.333333015441895,
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontSize": 13.333333015441895,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 1,
+        "Formatter": 0,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "Background": 1,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 5,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontSize": 12.0,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontSize": 12.0,
+        "BorderBottom": 1,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "Background": 1,
+        "FontSize": 13.333333333333332,
+        "Formatter": 0,
+        "TextIndent": 0,
+        "HorizontalAlignment": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": 1,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 1,
+        "BorderLeft": null,
+        "BorderRight": 1
+      },
+      {
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "[AUTO]General",
+        "#FFDCE6F1",
+        "Center",
+        "#FF95B3D7",
+        "#FFA9A9A9",
+        "#,##0_ ;[Red]-#,##0",
+        "Right",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        },
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,0": 0,
+      "1,1": 1,
+      "1,2": 2,
+      "1,3": 3,
+      "1,4": 3,
+      "1,5": 3,
+      "1,6": 3,
+      "1,7": 3,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 3,
+      "1,11": 3,
+      "1,12": 3,
+      "1,13": 3,
+      "1,14": 3,
+      "1,15": 3,
+      "1,16": 3,
+      "1,17": 2,
+      "2,0": 4,
+      "2,1": 5,
+      "2,2": 2,
+      "2,3": 3,
+      "2,4": 6,
+      "2,5": 7,
+      "2,6": 7,
+      "2,7": 7,
+      "2,8": 7,
+      "2,9": 7,
+      "2,10": 7,
+      "2,11": 7,
+      "2,12": 7,
+      "2,13": 7,
+      "2,14": 7,
+      "2,15": 7,
+      "2,16": 7,
+      "2,17": 2,
+      "3,0": 8,
+      "3,1": 9,
+      "3,2": 2,
+      "3,3": 10,
+      "3,4": 6,
+      "3,5": 7,
+      "3,6": 7,
+      "3,7": 7,
+      "3,8": 7,
+      "3,9": 7,
+      "3,10": 7,
+      "3,11": 7,
+      "3,12": 7,
+      "3,13": 7,
+      "3,14": 7,
+      "3,15": 7,
+      "3,16": 7,
+      "3,17": 2,
+      "4,0": 11,
+      "4,1": 12,
+      "4,2": 2,
+      "4,3": 6,
+      "4,4": 6,
+      "4,5": 7,
+      "4,6": 7,
+      "4,7": 7,
+      "4,8": 7,
+      "4,9": 7,
+      "4,10": 7,
+      "4,11": 7,
+      "4,12": 7,
+      "4,13": 7,
+      "4,14": 7,
+      "4,15": 7,
+      "4,16": 7,
+      "4,17": 2,
+      "5,0": 13,
+      "5,1": 14,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "6,0": 13,
+      "6,1": 14,
+      "6,2": 2,
+      "6,17": 2,
+      "7,0": 11,
+      "7,1": 12,
+      "7,2": 2,
+      "7,17": 2,
+      "8,1": 2,
+      "8,2": 2,
+      "8,17": 2,
+      "9,0": 15,
+      "9,1": 16,
+      "9,2": 2,
+      "9,3": 2,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "10,0": 13,
+      "10,1": 14,
+      "10,2": 2,
+      "10,8": 2,
+      "11,0": 13,
+      "11,1": 14,
+      "11,2": 2,
+      "12,0": 13,
+      "12,1": 14,
+      "12,2": 2,
+      "13,0": 13,
+      "13,1": 14,
+      "13,2": 2,
+      "13,5": 2,
+      "14,0": 11,
+      "14,1": 12,
+      "14,2": 2,
+      "15,2": 2,
+      "16,2": 2,
+      "17,2": 2,
+      "18,2": 2,
+      "19,2": 2,
+      "20,2": 2,
+      "21,2": 2,
+      "22,2": 2,
+      "23,2": 2,
+      "23,4": 2,
+      "23,5": 2,
+      "23,6": 2,
+      "23,7": 2,
+      "23,8": 2,
+      "23,9": 2,
+      "23,10": 2,
+      "23,11": 2,
+      "23,12": 2,
+      "23,13": 2,
+      "23,14": 2,
+      "23,15": 2,
+      "23,16": 2,
+      "24,2": 2,
+      "24,3": 2,
+      "24,4": 2,
+      "24,5": 2,
+      "24,6": 2,
+      "24,7": 2,
+      "24,8": 2,
+      "24,9": 2,
+      "24,10": 2,
+      "24,11": 2,
+      "24,12": 2,
+      "24,13": 2,
+      "24,14": 2,
+      "24,15": 2,
+      "24,16": 2,
+      "24,17": 2,
+      "25,2": 2,
+      "25,3": 2,
+      "25,4": 17,
+      "25,5": 17,
+      "25,6": 17,
+      "25,7": 17,
+      "25,8": 17,
+      "25,9": 17,
+      "25,10": 17,
+      "25,11": 17,
+      "25,12": 17,
+      "25,13": 17,
+      "25,14": 2,
+      "25,15": 2,
+      "25,16": 2,
+      "25,17": 2,
+      "26,2": 2,
+      "26,3": 17,
+      "26,4": 17,
+      "26,5": 17,
+      "26,6": 17,
+      "26,7": 2,
+      "26,8": 2,
+      "26,9": 2,
+      "26,10": 2,
+      "26,11": 2,
+      "26,12": 2,
+      "26,13": 2,
+      "26,14": 2,
+      "26,15": 2,
+      "26,16": 2,
+      "26,17": 2,
+      "27,2": 2,
+      "27,3": 17,
+      "27,4": 17,
+      "27,5": 17,
+      "27,6": 17,
+      "27,7": 2,
+      "27,8": 2,
+      "27,9": 2,
+      "27,10": 2,
+      "27,11": 2,
+      "27,12": 2,
+      "27,13": 2,
+      "27,14": 2,
+      "27,15": 2,
+      "27,16": 2,
+      "27,17": 2,
+      "28,2": 2,
+      "28,4": 2,
+      "28,5": 2,
+      "28,6": 2,
+      "28,7": 2,
+      "28,8": 2,
+      "28,9": 2,
+      "28,10": 2,
+      "28,11": 2,
+      "28,12": 2,
+      "28,13": 2,
+      "28,14": 2,
+      "28,15": 2,
+      "28,16": 2,
+      "29,2": 2,
+      "30,2": 2,
+      "30,4": 18,
+      "31,2": 2,
+      "32,2": 2,
+      "33,2": 2,
+      "34,2": 2,
+      "35,2": 2,
+      "36,2": 2,
+      "37,2": 2,
+      "38,2": 2,
+      "39,2": 2
+    },
+    "ColStyles": {
+      "0": 18,
+      "1": 18,
+      "2": 18
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "FontSize": 13.333333015441895,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "4,0,4,2",
+    "11,0,4,2"
+  ],
+  "Charts": [
+    {
+      "ChartType": 24,
+      "DataOrientation": 1,
+      "DisplayEmptyCellsAs": 1,
+      "DisplayHidden": true,
+      "DataLabelSettings": {
+        "ShowValue": true
+      },
+      "ChartColorPalette": {
+        "RepeatAlgorithmTint": [
+          0.0,
+          -40.0,
+          20.0,
+          -20.0,
+          40.0,
+          -50.0,
+          30.0,
+          -30.0,
+          50.0
+        ],
+        "ColorList": [
+          "Accent 1",
+          "Accent 2",
+          "Accent 3",
+          "Accent 4",
+          "Accent 5",
+          "Accent 6",
+          "Accent 1 12",
+          "Accent 2 24",
+          "Accent 3 35",
+          "Accent 4 47",
+          "Accent 5 59",
+          "Accent 6 70",
+          "Accent 1 82",
+          "Accent 2 94",
+          "Accent 3 105",
+          "Accent 4 117",
+          "Accent 5 129",
+          "Accent 6 140",
+          "Accent 1 152",
+          "Accent 2 164"
+        ]
+      },
+      "DataSeries": [
+        {
+          "Values": [
+            542279000.0,
+            17984000.0,
+            10605000.0,
+            596000.0,
+            64303000.0,
+            650000.0,
+            1458000.0,
+            674000.0,
+            2500000.0,
+            15778000.0,
+            545000.0
+          ],
+          "Name": "Series1",
+          "DataLabelStyle": {
+            "StyleInfo": {
+              "FontFamily": "メイリオ",
+              "FontSize": 10.666666984558105,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": "Text 1",
+              "Formatter": "0.00%",
+              "StrokeThickness": 1.0
+            }
+          },
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowPercent": true,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "MarkerType": 1,
+          "MarkerSize": "7,7",
+          "DataPoints": [
+            {
+              "StyleInfo": {
+                "Fill": "Accent 1",
+                "Stroke": "Accent 1"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 1,
+              "StyleInfo": {
+                "Fill": "Accent 2",
+                "Stroke": "Accent 2"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 2,
+              "StyleInfo": {
+                "Fill": "Accent 3",
+                "Stroke": "Accent 3"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 3,
+              "StyleInfo": {
+                "Fill": "Accent 4",
+                "Stroke": "Accent 4"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 4,
+              "StyleInfo": {
+                "Fill": "Accent 5",
+                "Stroke": "Accent 5"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 5,
+              "StyleInfo": {
+                "Fill": "Accent 6",
+                "Stroke": "Accent 6"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 6,
+              "StyleInfo": {
+                "Fill": "Accent 1 12",
+                "Stroke": "Accent 1 12"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 7,
+              "StyleInfo": {
+                "Fill": "Accent 2 24",
+                "Stroke": "Accent 2 24"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 8,
+              "StyleInfo": {
+                "Fill": "Accent 3 35",
+                "Stroke": "Accent 3 35"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 9,
+              "StyleInfo": {
+                "Fill": "Accent 4 47",
+                "Stroke": "Accent 4 47"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 10,
+              "StyleInfo": {
+                "Fill": "Accent 5 59",
+                "Stroke": "Accent 5 59"
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 11
+            },
+            {
+              "PointIndex": 12
+            },
+            {
+              "PointIndex": 13
+            },
+            {
+              "PointIndex": 14
+            },
+            {
+              "PointIndex": 15
+            },
+            {
+              "PointIndex": 16
+            },
+            {
+              "PointIndex": 17
+            },
+            {
+              "PointIndex": 18
+            },
+            {
+              "PointIndex": 19
+            }
+          ],
+          "StyleInfo": {
+            "Fill": "Accent 1",
+            "StrokeDashType": 8,
+            "Stroke": "Accent 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false
+        }
+      ],
+      "XAxises": [
+        {
+          "Items": [
+            "給料手当",
+            "旅費交通費",
+            "交際接待費",
+            "会議費",
+            "通信費",
+            "水道光熱費",
+            "消耗品費",
+            "支払手数料",
+            "広告宣伝費",
+            "外注費",
+            "租税公課"
+          ],
+          "UseCustomItems": true,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 1.0,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.5,
+          "Visible": false,
+          "StyleInfo": {
+            "Foreground": "Text 1",
+            "Stroke": "Text 1"
+          },
+          "IsAutomaticStroke": false
+        }
+      ],
+      "YAxises": [
+        {
+          "Items": [
+            0.0,
+            100000000.0,
+            200000000.0,
+            300000000.0,
+            400000000.0,
+            500000000.0,
+            600000000.0
+          ],
+          "Orientation": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 100000000.0,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 20000000.0,
+          "Visible": false,
+          "StyleInfo": {
+            "Foreground": "Text 1",
+            "Stroke": "Text 1"
+          },
+          "IsAutomaticStroke": false
+        },
+        {
+          "Orientation": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 1.0,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.02,
+          "Visible": false,
+          "AxisPosition": 1,
+          "StyleInfo": {
+            "Foreground": "Text 1",
+            "Stroke": "Text 1"
+          },
+          "IsAutomaticStroke": false
+        }
+      ],
+      "Legend": {
+        "StyleInfo": {
+          "Fill": "#00FFFFFF",
+          "FontFamily": "Meiryo UI",
+          "FontSize": 13.333333015441895,
+          "FontStyle": "Normal",
+          "FontWeight": "Normal",
+          "Foreground": "Text 1",
+          "Stroke": "#00FFFFFF",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "PlotArea": {},
+      "ChartTitle": {
+        "Text": "科目構成 - 実績",
+        "StyleInfo": {
+          "FontFamily": "Meiryo UI",
+          "FontSize": 21.333333969116211,
+          "FontStyle": "Normal",
+          "FontWeight": "Bold",
+          "Foreground": null
+        }
+      },
+      "Tag": {
+        "$type": "Forguncy.Model.ChartDataMapping, Forguncy",
+        "DataSeriesMapping": [
+          {
+            "SheetName": "ダッシュボード",
+            "ListViewName": "リストビュー1",
+            "ListViewColumnFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+              "SerializeProperty": "=ダッシュボード!B4"
+            }
+          }
+        ],
+        "ItemsMapping": {
+          "SheetName": "ダッシュボード",
+          "ListViewName": "リストビュー1",
+          "ListViewColumnFormula": {
+            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "SerializeProperty": "=ダッシュボード!A4"
+          }
+        }
+      },
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "#FF868686",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "Chart1",
+      "Location": "719,427",
+      "Size": "590,364"
+    },
+    {
+      "ChartType": 7,
+      "DataOrientation": 1,
+      "DisplayEmptyCellsAs": 1,
+      "DisplayHidden": true,
+      "ChartColorPalette": {
+        "RepeatAlgorithmTint": [
+          0.0,
+          -40.0,
+          20.0,
+          -20.0,
+          40.0,
+          -50.0,
+          30.0,
+          -30.0,
+          50.0
+        ],
+        "ColorList": [
+          "#B24F81BD",
+          "#B2C0504D",
+          "#B29BBB59"
+        ]
+      },
+      "DataSeries": [
+        {
+          "ChartType": 7,
+          "ValueFormula": "ダッシュボード!$F$3:$Q$3",
+          "Name": "予算",
+          "DataLabelStyle": {
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 13.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": "Text 1",
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            },
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false
+          },
+          "MarkerType": 1,
+          "MarkerSize": "7,7",
+          "StyleInfo": {
+            "Fill": "#B24F81BD",
+            "StrokeDashType": 0,
+            "Stroke": "#FF4F81BD",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false
+        },
+        {
+          "ChartType": 7,
+          "ValueFormula": "ダッシュボード!$F$4:$Q$4",
+          "Name": "実績",
+          "DataLabelStyle": {
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 13.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": "Text 1",
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            },
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false
+          },
+          "MarkerType": 1,
+          "MarkerSize": "7,7",
+          "StyleInfo": {
+            "Fill": "#B2C0504D",
+            "StrokeDashType": 0,
+            "Stroke": "#FFC0504D",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false
+        },
+        {
+          "ChartType": 17,
+          "ValueFormula": "ダッシュボード!$F$5:$Q$5",
+          "Name": "差異",
+          "MarkerStyleInfo": {
+            "StyleInfo": {
+              "Fill": "#FF9BBB59",
+              "Stroke": "#FF9BBB59"
+            },
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false
+          },
+          "DataLabelStyle": {
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "Body",
+              "FontSize": 13.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": "Text 1",
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            },
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false
+          },
+          "MarkerSize": "7,7",
+          "IsSecondaryAxis": true,
+          "StyleInfo": {
+            "Fill": "#B29BBB59",
+            "StrokeDashType": 0,
+            "Stroke": "#FF9BBB59",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false
+        }
+      ],
+      "XAxises": [
+        {
+          "ItemsFormula": "ダッシュボード!$F$2:$Q$2",
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 1.0,
+          "MinorTickHeight": 7.0,
+          "MinorTickPosition": 2,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.5,
+          "StyleInfo": {
+            "FontFamily": "Meiryo UI",
+            "FontSize": 13.0,
+            "FontStyle": "Normal",
+            "FontWeight": "Normal",
+            "Foreground": "Text 1",
+            "Stroke": "Text 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false
+        }
+      ],
+      "YAxises": [
+        {
+          "Items": [
+            0.0,
+            0.2,
+            0.4,
+            0.60000000000000009,
+            0.8,
+            1.0,
+            1.2
+          ],
+          "Orientation": 1,
+          "LabelFormatter": "General",
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 0.2,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.04,
+          "StyleInfo": {
+            "FontFamily": "Meiryo UI",
+            "FontSize": 13.0,
+            "FontStyle": "Normal",
+            "FontWeight": "Normal",
+            "Foreground": "Text 1",
+            "Stroke": "Text 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false
+        },
+        {
+          "Items": [
+            0.0,
+            0.2,
+            0.4,
+            0.60000000000000009,
+            0.8,
+            1.0,
+            1.2
+          ],
+          "Orientation": 1,
+          "LabelFormatter": "General",
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 0.2,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.04,
+          "AxisPosition": 1,
+          "StyleInfo": {
+            "FontFamily": "Body",
+            "FontSize": 13.0,
+            "FontStyle": "Normal",
+            "FontWeight": "Normal",
+            "Foreground": "Text 1",
+            "Stroke": "Text 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false
+        }
+      ],
+      "Legend": {
+        "Orientation": 0,
+        "Alignment": 6,
+        "StyleInfo": {
+          "Fill": "transparent",
+          "FontFamily": "Meiryo UI",
+          "FontSize": 13.0,
+          "FontStyle": "Normal",
+          "FontWeight": "Normal",
+          "Foreground": "Text 1",
+          "Stroke": "transparent",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "PlotArea": {
+        "StyleInfo": {
+          "Fill": "transparent",
+          "Stroke": "transparent",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "ChartTitle": {
+        "Text": "予実差異",
+        "StyleInfo": {
+          "Fill": "transparent",
+          "FontFamily": "Meiryo UI",
+          "FontSize": 27.0,
+          "FontStyle": "Normal",
+          "FontWeight": "Bold",
+          "Foreground": "Text 1",
+          "Stroke": "transparent",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "FontFamily": "Body",
+        "FontSize": 14.670000076293945,
+        "FontStyle": "Normal",
+        "FontWeight": "Normal",
+        "Foreground": null,
+        "Stroke": "#FF868686",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "Chart2",
+      "Location": "123,125",
+      "Size": "1185,297"
+    },
+    {
+      "ChartType": 24,
+      "DisplayEmptyCellsAs": 1,
+      "DisplayHidden": true,
+      "ChartColorPalette": {
+        "RepeatAlgorithmTint": [
+          0.0,
+          -40.0,
+          20.0,
+          -20.0,
+          40.0,
+          -50.0,
+          30.0,
+          -30.0,
+          50.0
+        ],
+        "ColorList": [
+          "Accent 1",
+          "Accent 2",
+          "Accent 3",
+          "Accent 4",
+          "Accent 5",
+          "Accent 6",
+          "Accent 1 12",
+          "Accent 2 24",
+          "Accent 3 35",
+          "Accent 4 47",
+          "Accent 5 59",
+          "Accent 6 70",
+          "Accent 1 82",
+          "Accent 2 94",
+          "Accent 3 105",
+          "Accent 4 117",
+          "Accent 5 129",
+          "Accent 6 140",
+          "Accent 1 152",
+          "Accent 2 164"
+        ]
+      },
+      "DataSeries": [
+        {
+          "ChartType": 24,
+          "Values": [
+            6820000.0,
+            404000.0,
+            16900000.0,
+            2130000.0,
+            650000.0,
+            21087000.0,
+            650000.0,
+            1560000.0,
+            585000.0,
+            635708000.0,
+            75925000.0
+          ],
+          "Name": "合計",
+          "DataLabelStyle": {
+            "StyleInfo": {
+              "Fill": null,
+              "FontFamily": "メイリオ",
+              "FontSize": 13.0,
+              "FontStyle": "Normal",
+              "FontWeight": "Normal",
+              "Foreground": "Text 1",
+              "Formatter": "0.00%",
+              "Stroke": null,
+              "StrokeThickness": 1.0
+            },
+            "IsAutomaticStroke": false,
+            "IsAutomaticFill": false
+          },
+          "DataLabelSettings": {
+            "ShowBubbleSize": false,
+            "ShowPercent": true,
+            "ShowSeriesName": false,
+            "ShowValue": false
+          },
+          "MarkerType": 1,
+          "MarkerSize": "7,7",
+          "DataPoints": [
+            {
+              "StyleInfo": {
+                "Fill": "Accent 1",
+                "Stroke": "Accent 1",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 1,
+              "StyleInfo": {
+                "Fill": "Accent 2",
+                "Stroke": "Accent 2",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 2,
+              "StyleInfo": {
+                "Fill": "Accent 3",
+                "Stroke": "Accent 3",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 3,
+              "StyleInfo": {
+                "Fill": "Accent 4",
+                "Stroke": "Accent 4",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 4,
+              "StyleInfo": {
+                "Fill": "Accent 5",
+                "Stroke": "Accent 5",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 5,
+              "StyleInfo": {
+                "Fill": "Accent 6",
+                "Stroke": "Accent 6",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 6,
+              "StyleInfo": {
+                "Fill": "Accent 1 12",
+                "Stroke": "Accent 1 12",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 7,
+              "StyleInfo": {
+                "Fill": "Accent 2 24",
+                "Stroke": "Accent 2 24",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 8,
+              "StyleInfo": {
+                "Fill": "Accent 3 35",
+                "Stroke": "Accent 3 35",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 9,
+              "StyleInfo": {
+                "Fill": "Accent 4 47",
+                "Stroke": "Accent 4 47",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 10,
+              "StyleInfo": {
+                "Fill": "Accent 5 59",
+                "Stroke": "Accent 5 59",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 11,
+              "StyleInfo": {
+                "Fill": "Accent 6 70",
+                "Stroke": "Accent 6 70",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 12,
+              "StyleInfo": {
+                "Fill": "Accent 1 82",
+                "Stroke": "Accent 1 82",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 13,
+              "StyleInfo": {
+                "Fill": "Accent 2 94",
+                "Stroke": "Accent 2 94",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 14,
+              "StyleInfo": {
+                "Fill": "Accent 3 105",
+                "Stroke": "Accent 3 105",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 15,
+              "StyleInfo": {
+                "Fill": "Accent 4 117",
+                "Stroke": "Accent 4 117",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 16,
+              "StyleInfo": {
+                "Fill": "Accent 5 129",
+                "Stroke": "Accent 5 129",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 17,
+              "StyleInfo": {
+                "Fill": "Accent 6 140",
+                "Stroke": "Accent 6 140",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 18,
+              "StyleInfo": {
+                "Fill": "Accent 1 152",
+                "Stroke": "Accent 1 152",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            },
+            {
+              "PointIndex": 19,
+              "StyleInfo": {
+                "Fill": "Accent 2 164",
+                "Stroke": "Accent 2 164",
+                "StrokeThickness": 1.0
+              },
+              "IsAutomaticStroke": false,
+              "IsAutomaticFill": false
+            }
+          ],
+          "StyleInfo": {
+            "Fill": "Accent 1",
+            "StrokeDashType": 8,
+            "Stroke": "Accent 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false,
+          "IsAutomaticFill": false
+        }
+      ],
+      "XAxises": [
+        {
+          "Items": [
+            "交際接待費",
+            "会議費",
+            "外注費",
+            "広告宣伝費",
+            "支払手数料",
+            "旅費交通費",
+            "水道光熱費",
+            "消耗品費",
+            "租税公課",
+            "給料手当",
+            "通信費"
+          ],
+          "UseCustomItems": true,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 1.0,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.5,
+          "Visible": false,
+          "StyleInfo": {
+            "FontFamily": "Body",
+            "FontSize": 13.0,
+            "FontStyle": "Normal",
+            "FontWeight": "Normal",
+            "Foreground": "Text 1",
+            "Stroke": "Text 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false
+        }
+      ],
+      "YAxises": [
+        {
+          "Items": [
+            0.0,
+            100000000.0,
+            200000000.0,
+            300000000.0,
+            400000000.0,
+            500000000.0,
+            600000000.0,
+            700000000.0
+          ],
+          "Orientation": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 100000000.0,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 20000000.0,
+          "Visible": false,
+          "StyleInfo": {
+            "FontFamily": "Body",
+            "FontSize": 13.0,
+            "FontStyle": "Normal",
+            "FontWeight": "Normal",
+            "Foreground": "Text 1",
+            "Stroke": "Text 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false
+        },
+        {
+          "Orientation": 1,
+          "LabelFormatter": "General",
+          "ShowMajorGridlines": false,
+          "MajorGridlinesStroke": "#868686",
+          "MajorTickStroke": "#FF868686",
+          "MajorUnit": 1.0,
+          "MinorTickStroke": "#FF868686",
+          "MinorUnit": 0.02,
+          "Visible": false,
+          "AxisPosition": 1,
+          "StyleInfo": {
+            "FontFamily": "Body",
+            "FontSize": 13.0,
+            "FontStyle": "Normal",
+            "FontWeight": "Normal",
+            "Foreground": "Text 1",
+            "Stroke": "Text 1",
+            "StrokeThickness": 1.0
+          },
+          "IsAutomaticStroke": false
+        }
+      ],
+      "Legend": {
+        "StyleInfo": {
+          "Fill": "transparent",
+          "FontFamily": "メイリオ",
+          "FontSize": 13.0,
+          "FontStyle": "Normal",
+          "FontWeight": "Normal",
+          "Foreground": "Text 1",
+          "Stroke": "transparent",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "PlotArea": {
+        "StyleInfo": {
+          "Fill": "transparent",
+          "Stroke": "transparent",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "ChartTitle": {
+        "Text": "科目構成 - 予算",
+        "StyleInfo": {
+          "Fill": "transparent",
+          "FontFamily": "メイリオ",
+          "FontSize": 24.0,
+          "FontStyle": "Normal",
+          "FontWeight": "Bold",
+          "Foreground": "Text 1",
+          "Stroke": "#00FFFFFF",
+          "StrokeThickness": 1.0
+        },
+        "IsAutomaticStroke": false,
+        "IsAutomaticFill": false
+      },
+      "Tag": {
+        "$type": "Forguncy.Model.ChartDataMapping, Forguncy",
+        "ChartName": "Chart3",
+        "DataSeriesMapping": [
+          {
+            "SheetName": "ダッシュボード",
+            "ListViewName": "リストビュー2",
+            "ListViewColumnFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+              "SerializeProperty": "=ダッシュボード!B11"
+            }
+          }
+        ],
+        "ItemsMapping": {
+          "SheetName": "ダッシュボード",
+          "ListViewName": "リストビュー2",
+          "ListViewColumnFormula": {
+            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "SerializeProperty": "=ダッシュボード!A11"
+          }
+        }
+      },
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "FontFamily": "Body",
+        "FontSize": 14.670000076293945,
+        "FontStyle": "Normal",
+        "FontWeight": "Normal",
+        "Foreground": null,
+        "Stroke": "#FF868686",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Name": "Chart3",
+      "Location": "123,427",
+      "Size": "590,364"
+    }
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "MasterPageName": "予実管理マスターページ１",
+    "AuthorizeInfo": {
+      "VisitMode": 3
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}
