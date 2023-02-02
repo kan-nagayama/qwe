@@ -16,134 +16,65 @@
   "AttachInfos": {
     "7,3": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "ShowPassword": true,
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ChangePassword_OldPassword"
       }
     },
     "11,3": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "ShowPassword": true,
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ChangePassword_NewPassword"
       }
     },
     "15,3": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "ShowPassword": true,
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ChangePassword_ConfirmPassword"
       }
     },
     "19,3": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "パスワードの変更",
         "AutoExecute": true,
         "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ChangePassword_Button"
       }
     },
     "22,3": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "NavigateType": "back",
-            "PassValues": []
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "キャンセル",
-        "TemplateKey": "_RS_Outline_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Outline_Style2"
       }
     }
   },
@@ -212,7 +143,7 @@
     "22,3,2,12"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "パスワードの変更",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -223,4 +154,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//9AYcXKCJbQrZZtNqZIxdHFlc/CBy3LWSrvi3K+rM3lXGgACXIPYntEg7gg9FEvVAlvtCb/rYtzGXPN+nDBurgYiFpGXrsT2ViW89EIfLAaop2Uyd5pm2oqycvaO+SX0dHiPBt4J+tPmWZj5oQKRD+pMCHo6FNTH5qMJLWIFBZ4bTBxkNg8wg9LBOWenA+aWeq7iTKO+bngBMy52D6xBBgtOzup8124grJ6UbUR3E2RXH2qJcIqDpUTfb1tl63ju5He1SFoQxeFftdDwZaxjpYCF5/5gVgzDiv+DPjj9peM1WiKfDuzg88y0VRkhAIxlS+1Rxzil1DYJSBhCoPxCwh2jcW8e8HLCmIvthXJQN/S8BBktL4ybMuRoU81iXH+eHB1MVRAsOjvVkTDkJNkArr7GGMcuM+udf1zhkHhax/T/6WnJdvOtHWS059FNFrkcOS440rVhTF6wp+eqCF/DYFsvG5G7PzxUXASu8n1HSZh7PZ/6qmeL6FUQUXJuFrH9cK/imqN2LlekUK1f5YUEKja2CecOr4Md+0q8nIZM7phAYLOimHGCdfWuxzielnh130GccnMFBeL6RlL9yk6p6oc/rEFqSIaTHsA0eKp5XTb8QF+Vu9W5zw1UxT3mcGi2Q9tEaALeCL0sf4/qDnyTYjcqe4MK1Ea4PLEzu8gJMc2Gpj3FxY+N4gattgukcyDc3355vQXDYxps9cW2l1yd8faomzVRPOhPP/07PGbRz91+KisbXbNrKhwry7GgBWhOddnVj6LZ5ee6gnkpNWJwmP6OiIoETq6lizqIQ6ChsX5LNnH9uLd6isOwiV+UoPWdkggQxmrgUBjvCJnmXSpHAlz4UEe+3UyOhpQycUyZ3qfn8YaHh0kxO+87JBqonwy+i2x0paLSQteDcnF6Htaz6QA==|920

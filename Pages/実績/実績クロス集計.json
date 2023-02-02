@@ -1,7 +1,11 @@
 {
   "Rows": {
-    "Sizes": {
-      "4": 5.0
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
     },
     "InLogicalVisibleIndexes": [
       0,
@@ -38,10 +42,9 @@
             "ColumnName": "年度"
           },
           "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=実績クロス集計!Year"
-          },
-          "Id": "e3eed6cc-df2a-482d-a898-e29e71cc79b3"
+          }
         },
         "TopCondition": null,
         "ListViewStyleName": "_RS_Medium2"
@@ -121,35 +124,22 @@
     },
     "1,26": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.DeleteRecordCommand, Forguncy",
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "CheckDataValidation": false,
             "ConfirmText": "本当に削除してもよろしいですか？",
             "UpdateValues": []
           }
         ],
         "Text": "削除",
-        "ClickMode": 1,
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "ClickMode": 1
       }
     },
     "5,0": {
       "CellType": {
-        "$type": "Forguncy.PivotTableCellType, Forguncy",
+        "$type": "Forguncy.PivotTableCellType, ServerDesignerCommon",
         "PivotTableSetting": {
           "SelectedListViewName": "リストビュー1",
           "Rows": [
@@ -157,7 +147,7 @@
               "DatabaseColumnName": "事業部",
               "DisplayName": "事業部",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!F2"
               },
               "BackgroundValue": {}
@@ -166,7 +156,7 @@
               "DatabaseColumnName": "部",
               "DisplayName": "部",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!I2"
               },
               "BackgroundValue": {}
@@ -175,7 +165,7 @@
               "DatabaseColumnName": "課",
               "DisplayName": "課",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!L2"
               },
               "BackgroundValue": {}
@@ -184,7 +174,7 @@
               "DatabaseColumnName": "科目",
               "DisplayName": "科目",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!O2"
               },
               "BackgroundValue": {}
@@ -193,7 +183,7 @@
               "DatabaseColumnName": "科目名",
               "DisplayName": "科目名",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!R2"
               },
               "BackgroundValue": {}
@@ -204,7 +194,7 @@
               "DatabaseColumnName": "日付.月",
               "DisplayName": "日付.月",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!U2"
               },
               "BackgroundValue": {}
@@ -215,7 +205,7 @@
               "DatabaseColumnName": "金額",
               "DisplayName": "金額",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!X2"
               },
               "Format": "#,##0_);[Red](#,##0)",
@@ -227,56 +217,56 @@
             {
               "DatabaseColumnName": "組織コード",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!C2"
               }
             },
             {
               "DatabaseColumnName": "事業部",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!F2"
               }
             },
             {
               "DatabaseColumnName": "部",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!I2"
               }
             },
             {
               "DatabaseColumnName": "課",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!L2"
               }
             },
             {
               "DatabaseColumnName": "科目",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!O2"
               }
             },
             {
               "DatabaseColumnName": "科目名",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!R2"
               }
             },
             {
               "DatabaseColumnName": "日付.月",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!U2"
               }
             },
             {
               "DatabaseColumnName": "金額",
               "ColumnCell": {
-                "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                 "SerializeProperty": "=実績クロス集計!X2"
               }
             }
@@ -2665,7 +2655,7 @@
     "0,26,1,3"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "予実管理マスターページ１",
     "AuthorizeInfo": {
       "VisitMode": 3
@@ -2677,4 +2667,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//oDrI6yVRufZZzA7ibp8Kj4BB35RTPDTvMOQf0AgK00QXuFkewr75uddznmeD5QqtkFukzbvI46aNEPTPyNlLJLyjrH9hsZdNNMBcEkNA08r3pDQZ2B1LDY5QlcPvrehdQlEe5j+Dp79G3M4Yf2/JAe4d1Tl5NjlI7X3P0GvSfkXuGuLlHzNbJgDYaICcU7P33XRdR34ccr74QxEzEwGYF52xvWElrMnA+jjo2usUx9WvIcOZdVLtU0mPXVyr1PVDMjuMIfDx+RitO23OjHWHe+dkvX3U6GMmF6Oh+/+YYdTz9R8skZgCJ4sGqE0vIENT6U1NALqFgQut8xmTFu/RtcyjvEzOefJ9nVNSUu/6B5i3St0hJUedPOYlxsnzjaeTSAf3mGH/YKBLhOyG3Madkc0lbJrqr6JH6Z/Ih7FsOj24fW+/Qx06uWcmyVEtmdnJkn41KExxNR+RdBCJ90xxyrxLako7dwTDvjvkTlpRneLBvGOmOwyUZ9yXL8DpORzGPP5PtNGJzH09h6yOQg3uZO3t5c0G8LuIV9bp6oOYUK3gGtujy+59BGNvF6zBkWcDCdjH20j6qFMhcKhEHF7P7YKkZNJVbwv9b6DtepatWQJ6aWQPn1GUYxRSnI6npS8bAx4diJxioHDu3jQCViHnRF3K/sZZ3SkJ5jh+hK8X9a2fmom1atsyAKj3eBHkNpmXAoUzfRj9XXBBvUsNRN6wDzSuXE+oq6jsQ9B5GUxpPxtyJdiOqnlXznA3t3iwbzYYGItVhPImoRIbrOKJ0pkNsAHmTFxtCecah7VjTPaxmvReBf2PrDn0QKdcT/L3Ovc04GFQu3oHxLASh/VIUHDoxhVMBFQ/nNhZmlMRxF9JKkI8wfoT4+wJunDZVB0Ujm65qbjmgjzvyXWo5EZiYfBxDQ==|920

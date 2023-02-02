@@ -16,107 +16,52 @@
   "AttachInfos": {
     "7,3": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "ShowPassword": true,
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ResetPassword_NewPassword"
       }
     },
     "11,3": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "ShowPassword": true,
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ResetPassword_ConfirmPassword"
       }
     },
     "15,3": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "リセット",
         "AutoExecute": true,
         "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ResetPassword_Button"
       }
     },
     "18,3": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "NavigateType": "back",
-            "PassValues": []
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "キャンセル",
-        "TemplateKey": "_RS_Outline_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Outline_Style2"
       }
     }
   },
@@ -190,7 +135,7 @@
     "23,1,1,16"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "パスワードのリセット",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -201,4 +146,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//l4Stv9NqnlEkbXSpnjnzfpIphih2yLvBYynMV+khL63s8fqLKyd6mMrTadcpyeTF+gGDnc5WiWb29SXuW03HsmbMQZA/IOPAzgHsAKSVahRekDNVuACFb8DBQSVT/0eRyfEnRKx0z+o3jzGMIwYZCrFh3lRza/04qglEEupQaIfWTeUzsMO1znoUATXkimHeWo98kMmsOaS4xt3VZgJ6bcaH4p/MFCf0GmfA5nFkj3J1XrMzRaoQp/UZM1qcY2Y0tnoWYVvSVGDQfir9u4uthwAJGP+V3awPk6pMxvJX9yJ7e4IkJRx7qzDC9ZCvecrr6j39oY2cJHA1dTlf2FxwdYREiwkGv5YZlnDHelKqY5zAtJpyXPe+XqetrJR3YTFcIQL//rBmERRcSEJjlm/s08Pp+HSeEOKyJWhyGdDnNeE4mvxVKZjiWhdvz0DxlOxsg3y44VsGtTFTyotogaVmsoI7g4oYSy04vbLGC/O6kk3Ev9RT5kRqHOvP8z2BkihdbxwB/fPQRnoMxxE3sOhBKAQnNLPSLMKyOypsFkbFpTkghQL0bkJLP1+ekbLAOFjFoEgBWfVji5XAYhYhws+izhCmT3X3nERz30fYR9DRP+OXsEJsDh+t4MXTow6VMHPWF0So5194IUO3gQsfWp332JfY1wqpRX2ON2lG6tlpIjo+ujDOkhHvaMG4TG/Tcgnnb33sCdDL2GfqhZwoV2oCO1SHFRWUlJA99oMcj1wkP5K1Fv/SahXhMv14I0RiHvBUrYOXo5rjBNAoFuTWxkSb6YAlaVqgp+AdHQcpiakmEygoGO/HY5Y4utOI39HBQL0A04QZ5zFoIuAncRIwMIDTFAWyDpbdZWy52+V/6p0lS+iH21Bx95mSfLHUUDAZr8+im91jlOVDAP+L5P1mHLbJqw==|920

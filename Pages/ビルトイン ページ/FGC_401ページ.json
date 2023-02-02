@@ -21,22 +21,8 @@
   "AttachInfos": {
     "16,13": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "Text": "一旦ログオフし、異なるアカウントでログインする",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "401Login"
       }
     }
@@ -128,7 +114,7 @@
     }
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
     "MobilePageName": "FGC_401ページ_モバイル",
     "Title": "401ページ",
@@ -140,4 +126,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//mfaytqrWpM4LTlHhcf/6Pu2t37JXfmBFb9JLCRlonpg5Ww87R6OaJRWiO5SUbacsLBlxlkSvAcwPo/f/k/m9v/iLpyOuNZS66AVH0DwzGGIMcM8d+rotIvNkYDtluAFvxu8OVfbi6aGOsx4jV5hzjcWP3jePVkfcpYrfk5rdHXVOl8hBibJHd7COUQiinm1I+W2odhahBWDQRMN3ee1YEJacCkaEMrmFuz9mBtYjWoWgrSRBHZ1JxblJvfShog0W87MSyIYwvAe99S/yfOpUguF57YqKaPiGG3+pFP4JTAMQsqdAMDzGGQCb2CPGVwOwR29igeAKrvVqDkiiVrYISgK1SMu4HUBPwXeTyElRFLiApNEJKFnsGK3aWgffTkhWfrTsR2o81bxfgTtrSmUB2ISk5/CGKe2VhpIXJnW4dHRkJycIAvujEWWzwdSmc6NHEXPLFs1MICnvRr5ZhuwInPjDpHPsMrqZwqCsXngVDSfnwYxjB5fPJnLhxVepeAoPUkjzZdr/hXyyW1/zYsNhOqbJ6ycI/Rscl/ndSSHkOR2aKEKotMaw3Mh1SIsG8bGr07wBdUiBY+H7JRaAjlNW7nTyV1iXyN1uvmagVA/1+P6xQHRqgfomlVzX46mEo7X6bef3/P1uJC7pWDCUXC00uEdVUPrtOUXvERlrBn7bbSm/7QbTJp53hZdtFT+VGz1qVOyPAVuZFLBE5kSfrhPjJJevMcMekrR0KmHz2UYCqk0f7kJpnz64O+iAezXkLE5pYAiT0RBa9ro3q7aMluAab04/ReQsEcIP/8pCJXALQtk1AHYqttPWNT7UQejzNUxj5SPy42ub6fbokvZKl1h+VHwrEdKOflMcmmENxZIK24sL7Hj8QkkWlxXqRHBTFqS+Dj5ZcvuhlfQtBxNZAJYG1g==|920

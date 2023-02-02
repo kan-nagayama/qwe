@@ -1,15 +1,31 @@
 {
   "Rows": {
-    "Sizes": {
-      "12": 30.0,
-      "14": 30.0
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
     },
     "Count": 25
   },
   "Cols": {
-    "Sizes": {
-      "20": 30.0,
-      "21": 10.0
+    "RowColumnAttachedInfos": {
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
     },
     "Count": 47
   },
@@ -23,88 +39,41 @@
   "AttachInfos": {
     "14,22": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ForgotPassword_UserOrEmail"
       },
       "DataValidationInfo": {
-        "IgnoreBlank": false,
-        "FirstParamValue": "",
-        "SecondParamValue": "",
-        "InputMessageTitle": "",
-        "InputMessage": "",
-        "ErrorMessage": "",
-        "SelectedDefaultRegularExpression": ""
+        "IgnoreBlank": false
       }
     },
     "17,25": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "メールを送信",
         "AutoExecute": true,
         "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "ForgotPassword_Send"
       }
     },
     "17,31": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "NavigateType": "back",
-            "PassValues": []
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "キャンセル",
-        "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal_Style2"
       }
     }
   },
@@ -190,7 +159,7 @@
     }
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "FGC_ユーザーマスターページ",
     "MobilePageName": "FGC_パスワードを忘れた場合_モバイル",
     "Title": "パスワードを忘れた場合",
@@ -202,4 +171,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//+Pm94ELoZkGUtqGzjPEfMtdAn1XHHlEw/oybk18U2VbbIMTN9tVvFFynCdZcqfwwNEruvYYX8b+2AjGnywpISKGQOjgBr/WbtBPBYQBkCcArR/WB6cSacvDt4Y+neg6HABPG5SMdTLFtaTU6dTTKLE4sww+5TrZfc/7l9yLgbEKGQKoX7jzw23lfrd3Iy4UD97u4A0Mv9J2eiBMj55GzBYQsuBGx/lNmLs0JG2iMDQve0AAf4JeE2PjJyPyCwsAxtGj6mhaPNd5IpjM32xnyFXxubi6IpSr+OXYOY3IxjzDkNtuG6lBZzAUcNB1mRsppQ3/EtI5PiTuY7sRyTUY9ounoyvhBg0yNDGfSCcf9q4Ego6rjYGR3JQXJW57aFXrUH+iAgEB6U7+tja5llBzTMc7YyPQrKzh0H+O9yqSnHFeYhxt7HPl0l8fQL4f1T3zV8HCPzm3FZTKnEYIvcg09dd8KdGj6uEyo2+wRD3dbF0JCBpp6f6O5HJ4DR57/Ou3lOJqSK8VwRurg7Us0eWXEWhh5VfEIYaUr3cE/Fz6X3rV+WdmSHVVgKPGZ3wvqx+/Eyo/3pzEwJVfG9JN4mJaJD/GY1UW394vGJY1pg69pdLcIz73vph1DNhhkcXYJ44QOLHB4S25YCtUzyuLGoWkyF/8qxafxQY1WeUu1yyPDS/RVJfCbvBjZLEpDj+2Fgo/CpQm9MORl/rOIdwTKjs6wj1Ns7mFv5irQBsBP/YqZw4IDZaZP7SP4ke4sfTzPnxpaYYef6Xo9eq9DkFVAlOYjIBfUoocngPcMRbGzKOY/+ez/2niA9IuJjx8vSWwF7peSCLYuUA6tf5pAQ0F1LSLjVdKwHU1AzzT8PAdoTA4PfqVy/ALdgNZEx4VVJVhU2n1NENWeNgSemflONMYwn866Ng==|920

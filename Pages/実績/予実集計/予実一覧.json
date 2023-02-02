@@ -3,36 +3,152 @@
     "Count": 32
   },
   "Cols": {
-    "Sizes": {
-      "0": 20.0,
-      "1": 20.0,
-      "2": 20.0,
-      "3": 20.0,
-      "4": 20.0,
-      "5": 20.0,
-      "6": 20.0,
-      "7": 20.0,
-      "8": 20.0,
-      "9": 20.0,
-      "10": 20.0,
-      "11": 20.0,
-      "12": 20.0,
-      "13": 20.0,
-      "14": 20.0,
-      "15": 20.0,
-      "16": 20.0,
-      "17": 20.0,
-      "18": 20.0,
-      "19": 20.0,
-      "20": 20.0,
-      "21": 20.0,
-      "22": 20.0,
-      "23": 20.0,
-      "24": 20.0,
-      "25": 20.0,
-      "26": 20.0,
-      "27": 20.0,
-      "200": 20.0
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "200": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
     },
     "InLogicalVisibleIndexes": [
       52,
@@ -261,7 +377,7 @@
   "AttachInfos": {
     "1,3": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -286,26 +402,12 @@
         "DisplayColumnBindingInfo": {
           "TableName": "組織マスタ",
           "ColumnName": "事業部"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        }
       }
     },
     "1,14": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -340,10 +442,9 @@
               "ColumnName": "事業部"
             },
             "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=予実一覧!D2"
-            },
-            "Id": "f02540c1-7c36-4974-aba5-5cc1a082aaf4"
+            }
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -352,32 +453,16 @@
               "ColumnName": "部"
             },
             "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=予実一覧!D3"
-            },
-            "Id": "b55d5a9d-de8c-4f29-a7ee-57143118da6d"
-          },
-          "Id": "39d4dbf0-0fa0-43fb-94f2-b4c8447d4172"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
+            }
           }
-        ]
+        }
       }
     },
     "1,25": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -402,29 +487,15 @@
         "DisplayColumnBindingInfo": {
           "TableName": "科目マスタ",
           "ColumnName": "科目コード"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        }
       }
     },
     "1,33": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.QueryCommand, Forguncy",
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "V予実一覧",
             "SqlCondition": {
               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
@@ -439,10 +510,9 @@
                       "ColumnName": "事業部"
                     },
                     "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=予実一覧!D2"
-                    },
-                    "Id": "183031a4-e24b-49ce-ab50-9691f5729ec5"
+                    }
                   },
                   "Condition2": {
                     "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -451,12 +521,10 @@
                       "ColumnName": "部"
                     },
                     "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=予実一覧!D3"
-                    },
-                    "Id": "382b7c07-08f3-45c6-a207-4d084f2c8d72"
-                  },
-                  "Id": "24ed174e-00a3-4ac8-ac99-a0145b563e8e"
+                    }
+                  }
                 },
                 "Condition2": {
                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -465,12 +533,10 @@
                     "ColumnName": "課"
                   },
                   "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=予実一覧!O2"
-                  },
-                  "Id": "21755671-4704-4579-a150-9273757747b6"
-                },
-                "Id": "706b929e-8ebb-451d-8241-c06b8c34ab81"
+                  }
+                }
               },
               "Condition2": {
                 "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -479,12 +545,10 @@
                   "ColumnName": "科目コード"
                 },
                 "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=予実一覧!Z2"
-                },
-                "Id": "f43fb8e8-2264-4d28-9f1c-935891b53f1c"
-              },
-              "Id": "846315b0-239d-4e02-b1eb-b34a957bab1c"
+                }
+              }
             },
             "Params": [
               "=D2",
@@ -492,30 +556,16 @@
               "=O2",
               "=Z2"
             ],
-            "ID": "acc8ea2be08e4da785ad8cd819fda4fe"
+            "ID": "8704bd4c93f144279436dee8cde93c0d"
           }
         ],
         "Text": "検索",
-        "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "2,3": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -548,50 +598,21 @@
             "ColumnName": "事業部"
           },
           "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=予実一覧!D2"
-          },
-          "Id": "9cbb77f4-8c1e-4020-8559-d0fa7a39ad4c"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
           }
-        ]
+        }
       }
     },
     "2,25": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
     "4,0": {
@@ -613,10 +634,9 @@
             "ColumnName": "年度"
           },
           "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=予実一覧!Year"
-          },
-          "Id": "82876794-5c68-4f65-bc82-19116cef631c"
+          }
         },
         "TopCondition": null,
         "ListViewStyleName": "_RS_Light9"
@@ -2774,7 +2794,7 @@
     "7,0,25,201"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "予実管理マスターページ１",
     "AuthorizeInfo": {
       "VisitMode": 3
@@ -2786,4 +2806,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//nwaq2o8nfioJd0lAvpbxgJ41pCa6lEKEDYdEodx/X1TxEhM9yAoYGlro/zBb5tu9w2Jba5uydsoguXKW2FI7hI/EO4GTWgUfsbkpnipX2CS9uOa1M9csrD91icL9dRRJ7F/92QFUdsUY/8g2i3qdXq39EMhVaKN3UJIckHPMlPAxycnmbmGAxDB/2VKy7OaN85g82/Qmb103vL0bdHiId80OsRJksU43ga5qdbS2orKMk8bQNTM4SQAPR2QYrHw3VKuUl6ozKxlQW3SJr8EyASaC3zGMCc/wIBcQQvQxB+MpZe/A10llfDPDT31aNgPqt9qpj6TDA6gK656LZ4qB15epUi2ExxpplgrBftd/l4frEMKVrS62o4Q8VkKer8E6+hK2FRGjPU6d/d8NMtTGDQ+7M10jRa/5HcnGlRoIMWJAgH49bbjpWWjulHxOTMDn87Sw5uqT/TZSLrdUF2ZQsOqQ0aQv4YGVOwh+5gkUJt2FAHw+CqXOeYWzCiAEttZestbqms9VCXZyOJeZEqDXzoODc0xZxJOSej0dgJvmszpEYBimDqLNtiz84yOyRTNTDrfFiYsJPTqPybfgneXsx34Roi/2yEAUMSQf8kU2GkkWgFiifLzuycITjVzjCqNwuEGGu+PYWBxIqZ6B3QzNPBwJVah3KvNsj8qcq/MLvP6U2x5nEsoqysCNyDnf+ZnnwmB8K6ThLAabe6dbo+lDJm1RvYhAPImP7lrQAuALO246k4ZtZ3+jZOL34BOXCwxJnQ+dczms5j0POe28Q1TBuomYeimZtW7zXoCauqqBFMrPOvYkZMqoDajmYo22aJw4p10u5pHFhElyCiqdfKugS+TqdLlzMHMd/VsRTQjB73BL+14kIMQ/ebKHhe9z5r7Ji7ebbOIOi5VRwTsujPXKCw==|920

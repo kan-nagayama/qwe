@@ -14,7 +14,7 @@
   "AttachInfos": {
     "7,1": {
       "CellType": {
-        "$type": "Forguncy.RadioGroupCellType, Forguncy",
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
         "NoneItemText": "<空>",
         "Style": 1,
         "LayoutMode": 1,
@@ -41,72 +41,31 @@
             "DisplayValue": "自身が担当者に割り当てられているレコードの変更のみ通知"
           }
         ],
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MailSubscription_Choice"
       }
     },
     "21,2": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "保存",
         "AutoExecute": true,
         "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MailSubscription_Button"
       }
     },
     "21,10": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "NavigateType": "back",
-            "PassValues": []
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "キャンセル",
-        "TemplateKey": "_RS_Outline_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Outline_Style2"
       }
     }
   },
@@ -168,7 +127,7 @@
     "21,10,2,6"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "メールサブスクリプション",
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
@@ -179,4 +138,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//g79PoQFO5zTOKOiJXqk3Wx/3Vv6xqEBw+KLjFXrVAjWiig5yg9R+bSlss67mlT7xJG2yKhODj9nWu3zpPjsmjACzGguSqj35sArhw9rAgn2b45T0CFZgpke2hwm1xPmgtrn8db2nTuhKpOdIOFtqy7+H8AR3F+jju8uHD7vzUEVxK51siqSAYUYRUYo/t1JJMhppprdNXOx8nld1KnF6fnkPsFmQWGEBtQEmcVGKcllz53KZkRSMsKLBng1/eiscanlgvElJJf/YC49n3WZPvL9baynFBcwH4Y7Kr71WJQCfrCZ8h4sqIQVP9a4NtYSgHE96gJtyNHOENTtJRpqAcdIKkU6ZfK9oyzeJx9zFkGX3l5fPTof0rHpTEo4IjIIaArYa2JmEzoZZE6dcfhxPItJh29+nAfB54Y2p5lVAMamAGk8fuaFkKX2WyAjJ2Uyqycm/ol926WxRu31Wb+Par/7PzcXceD2avb69QdIvFZ2A3nRLC1VGiv7h5YTMdA8aIv7Vyem2FoVV8rI8MSpBmWYetneqRZlYFRQdCaEAEUe7ZX9I7r/t1dyd6pjO6qFpuwQnTtGJQHNZGu6EbrHvBRJpQOcFspUcaagdmjo6t50EhvNxp7NK7SaWxjmdYVSpelYpt2LPYye864dfI/te7Q+aQtAgFGLRPALyt3s/jGJUiFqBilZNaji1kh2ARrtGFhRX0sMpJn6f4fk3REjoUMpXrwOU9edK8lQwxt2BncLH5rh6tbAE3vbmMJmwh1UW++B8NAPbdAQkaYdqQCgNPh0qe4+D8kINu8/+5f0bK8N3huBCR9KxsWSJF8VvIkHkQsA8P8FnCad0wmWRtxCnrUhEhUYsBSLyqbfZUtODFA4dIix2ws9oOLR2ivpfjq+pQjwk7+PVHxtZDNIrbbOkdQ==|920

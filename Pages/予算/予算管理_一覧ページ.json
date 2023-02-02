@@ -1,31 +1,111 @@
 {
   "Rows": {
-    "Sizes": {
-      "3": 19.0
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
+        }
+      }
     },
     "Count": 33
   },
   "Cols": {
-    "Sizes": {
-      "0": 20.0,
-      "40": 28.0,
-      "41": 28.0,
-      "42": 28.0,
-      "43": 28.0,
-      "44": 28.0,
-      "45": 28.0,
-      "46": 28.0,
-      "47": 28.0,
-      "48": 28.0,
-      "49": 28.0,
-      "50": 28.0,
-      "51": 28.0,
-      "52": 28.0,
-      "53": 28.0,
-      "54": 28.0,
-      "55": 28.0,
-      "56": 28.0,
-      "57": 28.0
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      }
     },
     "InLogicalVisibleIndexes": [
       45,
@@ -70,7 +150,7 @@
   "AttachInfos": {
     "1,3": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -95,26 +175,12 @@
         "DisplayColumnBindingInfo": {
           "TableName": "組織マスタ",
           "ColumnName": "事業部"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        }
       }
     },
     "1,13": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -149,10 +215,9 @@
               "ColumnName": "事業部"
             },
             "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=予算管理_一覧ページ!D2"
-            },
-            "Id": "b27da6a8-b08b-49f2-a929-de2d0a8b19ab"
+            }
           },
           "Condition2": {
             "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -161,32 +226,16 @@
               "ColumnName": "部"
             },
             "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
               "SerializeProperty": "=予算管理_一覧ページ!D3"
-            },
-            "Id": "7d346add-efd9-4137-a2d5-74b609350444"
-          },
-          "Id": "821774e4-ccbd-4951-a232-5a79a9e97dc2"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
+            }
           }
-        ]
+        }
       }
     },
     "1,23": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -211,29 +260,15 @@
         "DisplayColumnBindingInfo": {
           "TableName": "科目マスタ",
           "ColumnName": "科目コード"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        }
       }
     },
     "1,31": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.QueryCommand, Forguncy",
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
             "TargetTableName": "予算管理",
             "SqlCondition": {
               "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
@@ -253,10 +288,9 @@
                       }
                     },
                     "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=予算管理_一覧ページ!D2"
-                    },
-                    "Id": "612b70ae-1ffa-4a98-bb9c-a14c055615aa"
+                    }
                   },
                   "Condition2": {
                     "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -270,12 +304,10 @@
                       }
                     },
                     "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "=予算管理_一覧ページ!D3"
-                    },
-                    "Id": "b22ce12e-5426-46cd-807c-b831a6272884"
-                  },
-                  "Id": "a89a94b0-b05b-4aab-b58f-07cde7ccc063"
+                    }
+                  }
                 },
                 "Condition2": {
                   "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -289,12 +321,10 @@
                     }
                   },
                   "Value": {
-                    "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                     "SerializeProperty": "=予算管理_一覧ページ!N2"
-                  },
-                  "Id": "171087a1-57e3-438b-8521-d82b54360f38"
-                },
-                "Id": "cd81b85d-392a-4ed4-a992-b382c61da101"
+                  }
+                }
               },
               "Condition2": {
                 "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
@@ -308,12 +338,10 @@
                   }
                 },
                 "Value": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=予算管理_一覧ページ!X2"
-                },
-                "Id": "52152362-2b19-4df9-bd0b-04c5c4ca3cd9"
-              },
-              "Id": "437bb0fc-04ac-40c3-ac62-2b08b5d73987"
+                }
+              }
             },
             "Params": [
               "=D2",
@@ -321,30 +349,16 @@
               "=N2",
               "=X2"
             ],
-            "ID": "838d8178d07e4684808b0b53eb5254cd"
+            "ID": "9fe83f3fec63482b8e83f124225012d9"
           }
         ],
         "Text": "検索",
-        "TemplateKey": "_RS_Normal_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "2,3": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -377,50 +391,21 @@
             "ColumnName": "事業部"
           },
           "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=予算管理_一覧ページ!D2"
-          },
-          "Id": "cf34fb19-906a-43c7-bdff-13fd69b7f8fd"
-        },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
           }
-        ]
+        }
       }
     },
     "2,23": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
-        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
     "4,0": {
@@ -442,10 +427,9 @@
             "ColumnName": "年度"
           },
           "Value": {
-            "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
             "SerializeProperty": "=予算管理_一覧ページ!Year"
-          },
-          "Id": "30b8a53c-8e60-41dc-a4ea-08a582337313"
+          }
         },
         "TopCondition": null,
         "ListViewStyleName": "_RS_Light9"
@@ -456,7 +440,8 @@
     },
     "5,2": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
         "IsBounding": true,
         "Items": [
           {
@@ -515,20 +500,6 @@
               "ColumnName": "課"
             }
           }
-        ],
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
         ]
       },
       "IsCellIgnoreHideInListview": true,
@@ -575,7 +546,8 @@
     },
     "5,15": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 3,
         "IsBounding": true,
         "Items": [
           {
@@ -632,20 +604,6 @@
               "TableName": "科目マスタ",
               "ColumnName": "中科目"
             }
-          }
-        ],
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
           }
         ]
       },
@@ -2431,7 +2389,7 @@
     "4,55,1,3"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "予実管理マスターページ１",
     "AuthorizeInfo": {
       "VisitMode": 3
@@ -2443,4 +2401,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//HDlk6hkFWyFM1Pac3kGREEU1bYp89ZABpc18L/Gah/ZlWVXaXZ4HvkoRElwtC+n5JHkan0JoGtk/LvWKV50xek3DoDbJJ9sZtKcc+Mw5Ts+YCsv8lpLwOZ8W4zyMtWah8LoQsTsLAR8kEOemDoFAQIX8fEzg4KdhHdEqsqgNmEDAX5FS8yB3Qdz/p0D7XvnUeXEFT9Dz5lrhcVFP29EEa8NWAYulSK8iM8ay4t/h4dzJkEZABrrg3dZ7G2WajkEqBEzghIJRzus4akkyDMc8bI1d2fpiOIuYrp5hMgbYJA7c1vBGwLIkEbSmMPZFx45CGLctEgHLVavotZYGWnHYxGeijP+qdxVE12PSSdKXgDZkF37FRs/oi2e4z9wu1aSPGn6yp0oUIcqfW8Yl2kfjyo3FFZgyARgLaFX0lszK9orztLv8SbIszCi+iH84VUQsx2TvpbP+SDUZSh1YAizT1zyjxPoZMakdDH4lyVCASnwRb1+KSwgYV30oMT5xUhiIjWHTUHz+oxoqABNY9uBhYoj74wW4tQkHy9eR+N301gK8put5Dv+08GHgX4wh2nDqYvMKuxqKdESlufpg43bD+TMaXuBLeu2WHV8CGSHHhnnzK64BwksctZXWxxv2mJc66IO9XQc7E97oyxOizQ08wTkvYFjT8mE5a+/hJpzN7g+S+UaWYdWjngzOyqETtmB3ecb3YK3Rgytxm+57EoVFkifIe7fypZyZdGNSPWG1mTfi3181EmNrpx4GmJGQncawfucjiQ6tZM6DK+Z5zFDdRwWrXMWwWcSKIzswmydi8K8pi5Fb734vAlO/IUHU40DqssBcmL/ZPCf1EO3XbycZop2CfMJf42AAZVY+YlXHGCPIAA7S56H7WuRNx0/rfzyxYnZZlLRKu+t0icQ+/HMBlQ==|920

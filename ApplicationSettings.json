@@ -1,0 +1,28 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "rFvsug!gnTA7"
+  },
+  "IsPageInContainerBackgroundHardCodeWhite": true,
+  "WebSitePort": 23571,
+  "UserServicePort": 43497,
+  "NotAllowModifyDatabaseByJsApi": false,
+  "NotAllowSendMailByJsApi": false,
+  "StartPage": "スタートページ",
+  "StartDateFiscalYear": 4,
+  "MaxRowCount": 10000000,
+  "AuditingList": {
+    "実績管理": 0,
+    "V実績集計": 0,
+    "予算入力": 0,
+    "科目マスタ": 0,
+    "組織マスタ": 0,
+    "V実績科目集計": 0,
+    "V実績科目グラフ": 0,
+    "V予実棒グラフ": 0,
+    "V予算科目集計": 0,
+    "V予実全社": 0,
+    "V予実一覧": 0,
+    "予算管理": 0,
+    "V予実一覧_多段": 0
+  }
+}

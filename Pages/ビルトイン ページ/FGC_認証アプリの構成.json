@@ -1,19 +1,51 @@
 {
   "Rows": {
-    "Sizes": {
-      "16": 10.0,
-      "28": 15.0
+    "RowColumnAttachedInfos": {
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
     },
     "Count": 35
   },
   "Cols": {
-    "Sizes": {
-      "21": 10.0,
-      "22": 10.0,
-      "23": 30.0,
-      "33": 30.0,
-      "34": 10.0,
-      "35": 10.0
+    "RowColumnAttachedInfos": {
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
     },
     "Count": 57
   },
@@ -25,50 +57,22 @@
   "AttachInfos": {
     "5,21": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, Forguncy",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "fgc_logo_light.png"
       }
     },
     "17,24": {
       "CellType": {
-        "$type": "Forguncy.BarcodeCellType, Forguncy",
+        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
         "CodeType": "QRCode",
         "ForguncyAttribute": "MFA_Secret_Barcode"
       }
     },
     "27,21": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "次へ",
         "TemplateKey": "_RS_RoundCorner_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_Secret_Next_Button"
       }
     }
@@ -139,7 +143,7 @@
     }
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MobilePageName": "FGC_認証アプリの構成_モバイル",
     "Title": "認証アプリの構成",
     "AuthorizeInfo": {
@@ -153,4 +157,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//nD1arvZZfcPPrJJMkHbChmfYHNrtY9Ydzv2I4RPILmExCd0/KrepYR3wg6+uk0KRuRHk3QCsU7UCTOGB2qsz1dQKo0RxsLQMIjszO57B1YKaMu5WpVXLhMfS0/UiBwuSrbYaKxraRt6NOF4IraHGSVgFrA/DVj5JfZV+1kcBSN99sWPEixwktCXpn5pG3SYJ6JGq3l9ycqzzSMgNWPRGnZEGM5S9BMat+UiWAqgKj4SzO8vvK9DirHXt5SRaSkjzwwVV1B7NE+XowWXU2CoB6eGsG0/OSRBUqqB8RkJTbUnD2ar5uS7SEycWPM2cnTWoOBjTViZl0atAWQtVt7PdCYuCoH95o7bgNyUBnBFBtGXAHbp+42rQrCXWgdnMBacn0IRzvG+ej9YcZ4BsSblbv8N+Z+zjdqbsSoNYwmPW2xmou74hMja87E60eVj26NImbcdP51Dce84lXOOcxdqsF6QlgqF+HqDHYm0xwRhDMjM0LmtZNuv5N/oO8a8SI9v+nfKLGoKbMlYt8VG/UydWZJ7PpmywTmLUo2alq53UMPVy3TQdao8iATi2TAW30gnOHFJ3+tgCReBI9LOMftklf/dvA34593GbbGm9J2TVG9DEWJPbPIKb63ASjitmBG8YWRDR+4MxHK5Nt/Rtc4Bv2BUudXOs78rwjHQ0UNROHh29iMfjFmELbOK2/kU6eZwEivmdVv8MBIAxKUiA6QyIKFe+DYkJgnyvDVG3W4xoJQkxk3HM19Nuur8AtybAHXYszyh6FTSm7xmM/XRazRSxohhYd8f7XRcm+tg1aHamOgpnWUsQDUeeHbz/fh9dbZxLsXp3i7u4o1nNmOD4BAjfqn7tQFY/ub3gu667zpLtsCxQzGkS0UN3IEf18sEafaBviXS9rDF8uTO1kRhPzF3EFQ==|920

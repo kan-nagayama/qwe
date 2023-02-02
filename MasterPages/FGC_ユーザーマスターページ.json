@@ -53,11 +53,12 @@
     }
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.MasterPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
     "IsBuiltInPage": true
   },
   "PrintInfo": {
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//Y2YLKVdzVUcGNaTWCQ2ygs4ZZxrEz2a55s/bdix8m4TMb3cYVR557RKZFkjiHnlw/Tk9SlUW4ddcKzMalNderZMd4UeeBSFCP4a2KzPtnEsv2gxDk8eztafbZHcNGo/ya7yvBhuXdRqqQbv0lPAv7AQ82N3rFY5Qr6Ta26SEExW1bvGDOYqdUt+VcH9v3oT9V7P4LCXikN7/KM/eI+yRTqTjRjte00WPo0eG/TClX/f2Q2dVpSH95ggJmEXACUpxO5Fbm7OqzaPooCRvMXMzykn8r/M1IXRenD41+VPzW42ez0DTp/7tnytfYUmKTJFhdsJlKEY66SDy82XfkGWnhRORCy0KFOH1hk9YQY+gmM7Rr0L9gWxT39jqn15EiY1IAzhur4DmJ12GWdrgYhBuEReOJhD20TGSlwXQTPiejhuB37lQseBoBf/fZex/LMBIScj5ZMTbzbICRdqts7cm6NZ2hdTjq2JtdTdPoR4vvLIb/Xcz2j6vmHlLqckUxZr9MgrTBrin+JbTMjGoy36R2EAz5HMOxosU52uAPNyIAEIxnr2+kScS/IxL6vFpSVzxwSdpWq8i4klwkfuiPAGl4soGp9PjuP65A3hzozF41E/jCuNcBSkkSDDnMb36GSpdRMWcDvrQzae+LH8op1U9+TlCkRZHKwU2Xsu54hoKdHBRWcecxL3QCkqcIQIWWEKT+CnDG8dJNff8I+RiJ6TISwG56RccNE+Lbb1hHlrSKR41vdcuv0eucoEtKPvbKMYkWfllqzcW3kBbz0wXaxbr4hYCRThx5mXyesOfvO9jMxOeLx2QxW3wEMPaNZaibIzCogVyKXt8JV7pacEZaXVj1YNxXO3O8UpfPFw22Psp3R4RrEJNM+psfpk6gp4oRZpA3YM9RtDOvf8ebtiAnlsliA==|920

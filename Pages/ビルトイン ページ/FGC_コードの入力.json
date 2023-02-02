@@ -1,17 +1,41 @@
 {
   "Rows": {
-    "Sizes": {
-      "19": 10.0,
-      "24": 15.0
+    "RowColumnAttachedInfos": {
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
     },
     "Count": 35
   },
   "Cols": {
-    "Sizes": {
-      "21": 10.0,
-      "22": 10.0,
-      "35": 10.0,
-      "36": 10.0
+    "RowColumnAttachedInfos": {
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
     },
     "Count": 58
   },
@@ -24,48 +48,20 @@
   "AttachInfos": {
     "5,21": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, Forguncy",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "fgc_logo_light.png"
       }
     },
     "18,21": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_LargeRoundCorner_LightTheme_Normal3",
         "WaterMark": "",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
       },
       "DataValidationInfo": {
@@ -73,55 +69,23 @@
         "CompareParamType": 2,
         "IgnoreBlank": false,
         "FirstParamValue": "6",
-        "SecondParamValue": "",
-        "InputMessageTitle": "",
-        "InputMessage": "",
-        "ErrorMessage": "6桁のコードを入力してください。",
-        "SelectedDefaultRegularExpression": ""
+        "ErrorMessage": "6桁のコードを入力してください。"
       }
     },
     "21,21": {
       "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, Forguncy",
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
         "Caption": "このデバイスではコードの入力は不要にする",
         "Style": 1,
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
       }
     },
     "23,21": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "確認",
         "AutoExecute": true,
         "TemplateKey": "_RS_RoundCorner_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
       }
     }
@@ -209,7 +173,7 @@
     }
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MobilePageName": "FGC_コードの入力_モバイル",
     "Title": "コードの入力",
     "AuthorizeInfo": {
@@ -223,4 +187,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//WB3oVdQrSfPyvkzDAJim/EN17xZid2Zvi0+6LHlEjF00bNHYSJy4gEiTr25SMsdXdTUrf0wdGqMmtLidwIMn+vd+pUo2qH02E4PZhXn6TNKWefT4Eijmjb9ljcAcIUM80NohuvWfbyYax1y5fo3hTa4QmBRlN1E15ZPLR7OXDPzZ5zRS0B1+2egCvwdfa265i69vroU4SUrR90Y9Tn8ZbactWNnUjAxwt9RPEqEsc2p2OjqBxm1ZdXvJQKgTYypzwU9ENCRdHSlfKVZUIQlDr8PBxJx5RGDsp9OamwXlUzXK4+aTJdxOqexnhsO7FWKQElf3HYxMbCk7J6a9xIBPghkbvA4OctFwhbSBCsvKp/h7loPInw2LF+QeqrBjkA3Lf1ahvc3m8G0w9js1DjPKKoCf3Q43ka26DZWkM12nWATP8JckonlI89bqtZiBIJ4KuxhwYxbc+CYcfSpsLIRC307jHJwyYFKqk2qsj4Gmtmyf5PdVE89S7obD+8CE9RRdtA6XSZlrynSi+xsn6gH+LBxndwIgT3Zldr29RqdCXqfK8oXpsgwZYyZ2660sZATGWuqD/DKON+y/dY9SIBGZGEET7pFAPRwQEIZE+hXbiRkfEyP914Wy8nHWPPeLl2KE4Xrc65ynYoM4Doot40ddyEnZy3utR/9kPgCDL9GszlwMZkToGwGBFSZeVHJYCw/53znxf0Apc96qnM3VMveEBuijh30G5tRPpIIMQsaNuUa8EFiia+OcKDnvlLop/+/HtOgtQUGPIM6jTa4q25IFLalQIO7xWuTpXPF8J+gEVXPK9rC2OYEMLcL6QBg2d640pzKVIABs4vuSTsEIpfI2wQ06sGHRBlzQahdKY0gI/HamRfmQIc/l0fa3bNb4oB61hMWQnlCapXLhJ2rbWrpnnw==|920

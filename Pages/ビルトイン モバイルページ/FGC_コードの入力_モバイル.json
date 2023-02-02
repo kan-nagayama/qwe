@@ -1,8 +1,16 @@
 {
   "Rows": {
-    "Sizes": {
-      "15": 10.0,
-      "23": 10.0
+    "RowColumnAttachedInfos": {
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
     },
     "Count": 29
   },
@@ -19,48 +27,20 @@
   "AttachInfos": {
     "3,4": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, Forguncy",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "ImagePath": "fgc_logo_light.png"
       }
     },
     "13,3": {
       "CellType": {
-        "$type": "Forguncy.TextCellType, Forguncy",
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
           {
-            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, Forguncy"
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
           }
         ],
         "TemplateKey": "_RS_Normal_DarkTheme_Normal2",
         "WaterMark": "",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_VerifyCode_Inputbox"
       },
       "DataValidationInfo": {
@@ -68,55 +48,23 @@
         "CompareParamType": 2,
         "IgnoreBlank": false,
         "FirstParamValue": "6",
-        "SecondParamValue": "",
-        "InputMessageTitle": "",
-        "InputMessage": "",
-        "ErrorMessage": "6桁のコードを入力してください。",
-        "SelectedDefaultRegularExpression": ""
+        "ErrorMessage": "6桁のコードを入力してください。"
       }
     },
     "16,3": {
       "CellType": {
-        "$type": "Forguncy.CheckBoxCellType, Forguncy",
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
         "Caption": "このデバイスではコードの入力は不要にする",
         "Style": 1,
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_VerifyCode_TrustDevice"
       }
     },
     "20,3": {
       "CellType": {
-        "$type": "Forguncy.ButtonCellType, Forguncy",
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "確認",
         "AutoExecute": true,
         "TemplateKey": "_RS_Outline_RoundCorner_Style2",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "ForguncyAttribute": "MFA_VerifyCode_SubmitButton"
       }
     }
@@ -195,7 +143,7 @@
     }
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "Title": "コードの入力",
     "AuthorizeInfo": {
       "VisitMode": 2
@@ -209,4 +157,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//lqnXTssTtR4GRqtrBwwjTiTCraftK4xlIQkYHOZojd5egPLITRgnhg8itnK/9EU3k5FdP/hx7mj6+ZGNjV3pYiJgnojdXQ8ojknNwlZosZpQy1fnHRpcBzA3Mv/ScT4YCHF1V0IXPWCXICSHRKrOSJFbyLSdi906gzn+qWPaRicq/wmtrFWD9kajZrq8T2sjke/KEVbn8uGsLMSwb2nrM6e5p1bBYXN/N7zLwGNfXzF78StsT2wQrE6zWwlbDlYHjdnRNriVezCv/G14ADv8/Bp25+sdTR4DwsztwNudTVdP9q4/GEXcHtP4KGyy6to/D5i880NMzEBvUOLj3cuqs13RZUFVUx6OllqEHzbnxDFo4D0ENGjpOaUqoMAQ1s7ACjY8XTT6ipaEkWVcG2B8wTLm0vA5SxEkXBMwegnUXCB8swnR62D2vxAlcV3odaI9AqQiGcmDwuUexgUinTvnktliaGjzIc+n4MFozyKUN4Xr2RRCI+/+Ux1ShejOnsHJRo94UzQnbScA/eHixLPOa5FAIZfR0hVMWvcyXMiaxgEIBsmeiBbzyk3XgZa8ppQh6rZHhCZw/yXI5uHJNHzhZ3Xch9YJFg9skLp8nxIbOYRVeWYMdw4CyqyvxGinZ4n3QefpoIrojiD7ZxbRZE0+GPnNF8tmtkwznPUh+spHPpBkbh0gz5XqVa0afP+5aNqrHz5DFASkcJmh7EYX+KGypjFyOJdhGnEtfTUhoGdOHCnZUGIgK6aDXsPpmzIkoxPkpsCJ0EILzxsQTkZfZaCtP4XL8qAKapy/4z3bupXqCTCErE25a+mceP3ySavjZFKC9XQQJdQHrYq0Bd5sjl4+V2nlfTJVMPMMINeCvlpLTDk/bGfb/WZlS1IjqgnSng8CTZd+FUyMEs9HqbJl5LyV0w==|920

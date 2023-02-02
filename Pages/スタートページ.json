@@ -1,15 +1,51 @@
 {
   "Rows": {
-    "Sizes": {
-      "9": 28.0,
-      "10": 10.0,
-      "11": 28.0,
-      "17": 10.0,
-      "18": 28.0,
-      "19": 10.0,
-      "20": 28.0,
-      "21": 10.0,
-      "22": 28.0
+    "RowColumnAttachedInfos": {
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      }
     },
     "Count": 26
   },
@@ -34,7 +70,7 @@
   "AttachInfos": {
     "2,16": {
       "CellType": {
-        "$type": "Forguncy.DropDownListCellType, Forguncy",
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
         "SelectOnly": false,
         "TemplateKey": "_RS_Normal_Normal3",
         "IsBounding": true,
@@ -61,41 +97,13 @@
           "TableName": "予算管理",
           "ColumnName": "年度"
         },
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "CellDefaultValue": 2020
       }
     },
     "6,10": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, Forguncy",
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "Text": "      予算",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "HorizontalAlignment": 0,
         "ImagePath": "add2.png",
         "BuiltIn": true
@@ -103,22 +111,8 @@
     },
     "6,27": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, Forguncy",
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "Text": "      実績",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "HorizontalAlignment": 0,
         "ImagePath": "File.png",
         "BuiltIn": true
@@ -126,178 +120,112 @@
     },
     "9,11": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "予算管理_一覧ページ",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=予算管理_一覧ページ!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "予算の参照",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     },
     "9,28": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "実績管理_一覧ページ",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=実績管理_一覧ページ!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "実績値の参照",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     },
     "11,11": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "予算入力ページ",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=予算入力ページ!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "予算の入力",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     },
     "11,28": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "実績クロス集計",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=実績クロス集計!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "実績値集計(ピボットテーブル)",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     },
     "15,10": {
       "CellType": {
-        "$type": "Forguncy.ImageCellType, Forguncy",
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "Text": "      予実比較",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ],
         "HorizontalAlignment": 0,
         "ImagePath": "Chart.png",
         "BuiltIn": true
@@ -305,119 +233,80 @@
     },
     "18,28": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "ダッシュボード",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=ダッシュボード!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "ダッシュボード",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     },
     "20,12": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "予実一覧",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q3"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=予実一覧!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "予実集計表",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     },
     "22,12": {
       "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, Forguncy",
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.NavigateCommand, Forguncy",
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "PageName": "予実一覧_多段",
             "PassValues": [
               {
                 "Source": {
-                  "$type": "Forguncy.Model.FormulaReferObject, Forguncy",
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "=スタートページ!Q4"
                 },
                 "TargetCell": {
                   "SerializeProperty": "=予実一覧_多段!Year"
                 }
               }
-            ]
+            ],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
           }
         ],
         "Text": "予実集計表(多段表示)",
         "ClickMode": 1,
-        "TemplateKey": "_RS_Normal5",
-        "UIPermissions": [
-          {
-            "Scope": 2,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          },
-          {
-            "Scope": 1,
-            "AllowRoles": [
-              "FGC_Anonymous"
-            ]
-          }
-        ]
+        "TemplateKey": "_RS_Normal5"
       }
     }
   },
@@ -1671,7 +1560,7 @@
     "15,10,2,33"
   ],
   "PageInfo": {
-    "$type": "Forguncy.Model.Pages.NormalPage, Forguncy",
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
     "MasterPageName": "予実管理マスターページ 2",
     "AuthorizeInfo": {
       "VisitMode": 3
@@ -1683,4 +1572,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}
+}//MMhddFKkFjNNGnkoHh3QtM/spw+BhzC1+r4d5c8cpl6ui1QtqWKs9gyydpmihgYFE8TAneSIVPAiZ1gKYRFjimbq7cjvtXDue6guPJ5vmm1khBK3j56ErJFFefCrQVQRWcUdV0tZ+yQeypCo0btufdYTLZP7YzkkUUmkPBhpZcl9uKHArpAr5iLUwOJkNR6LQYusyxL23h685IXYdv38U1RGDOnrrqFAL1fZk+BEAZX6FopA3JPpbpDeqZUWTqEZb9HqMhCslUc4X7CXdtypMNGED3lCZSKgw+4DSBVS5T6LSTrfPwOEyr+2xCZcxQphTGRk3E6EnY4d9EJAfO/rEagaEJZpWKXpDZjmX5kC7zBh7MtyKehXSg5p69Ir6mF/lR0WA/IehQeoGcvz0ai2Al+I+fKzTuo2UsCsBVgTzSxq30pDQk2AF33z/9PYDIou3fUmUS1COjCM0cg7rD/4Y2l58CWD9lFqq38YBptdDh3ZJO/J1j2piiNpc/pMF90qnEVWci8s2gFa7N4Bqd5z5Xwvpe8yfY/tdGYh+8x/y6PCsGhawEyoEARAb/9xgvSME1zB7sakDBbxbdz6fS1xqrzD6HY41We8rw4rnhMY82OqK57xpdxKiV+J7p2Teauf/STD8XzppWt3A3sZgZ9d6RBo24dM40k+wAG4r3iXXXBA4yTkd1Wk5HRtBSXlGG+8HDjxr7re0Us6mOfbncyULg1A9McIUb4s+7Cus3FBzivn1UlQDN1/eenQKj5XlvY0qCMgda+4/LxW8pM4DGGyuyob4tS0eGGLx+4nCd20DgCizX89oPp1AIYwPdV24cjZXvAw8BWs3EhI3AA1M7nXpkoLxHKNREliB73iVTSwtJWv5cG96GA5s5y+8XDs/Z6FZzS8ZO8uTRpyJLm17fbA1g==|920
